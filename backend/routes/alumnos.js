@@ -302,6 +302,7 @@ router.post('/getAlumnosGrupo', (req, res, next) => {
 
 router.post('/delete', (req, res, next) => {
   let matricula = req.body.matricula;
+
   Alumno.getAlumnoByMatricula(matricula, (err, alumno) => {
     if (err) throw err;
     if (!alumno) {

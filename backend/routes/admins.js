@@ -6,6 +6,52 @@ const config = require('../config/database');
 const Admin = require('../models/admin');
 const Alumno = require('../models/alumno');
 
+// REDIS NEEDS
+const redis = require('redis');
+let redisClient = redis.createClient();
+redisClient.on('connect', function() {
+  console.log('Connected to redis for the Admin');
+});
+
+// ROUTE TO SEARCH USER IN REDIS
+router.post('/searchAdmin', (req, res, next) => {
+  let username = req.body.username;
+
+  redisClient.hgetall(username, function(err, obj) {
+    if (!obj) {
+      return res.json({
+        success: false,
+        msg: 'No existe admin con ese username'
+      });
+    } else {
+      return res.json({
+        success: true,
+        admin: obj
+      });
+    }
+  });
+});
+
+// *** ROUTE TO CREATE USER IN REDIS ***
+//
+// router.post('/createAdmin', (req, res, next) => {
+//   let username = req.body.username;
+//   let password = req.body.password;
+//
+//   redisClient.hset(username, "password", password, function(err, admin) {
+//     if (!username) {
+//       return res.json({
+//         success: false,
+//         msg: 'No se creo el admin en redis'
+//       });
+//     } else {
+//       return res.json({
+//         success: true,
+//         msg: 'Se creo el admin exitosamente en redis'
+//       });
+//     }
+//   });
+// });
 
 router.post('/register', (req, res, next) => {
   let newAdmin = new Admin({
@@ -22,7 +68,13 @@ router.post('/register', (req, res, next) => {
         msg: 'Ya existe un administrador con ese username'
       });
     } else {
-      // Add the user to the db
+      redisClient.hset(newAdmin.username, "password", newAdmin.password, function(err, admin) {
+        if (!admin) {
+          console.log('No se creo el admin en redis');
+        } else {
+          console.log('Se creo el admin exitosamente en redis');
+        }
+      });
       Admin.addAdmin(newAdmin, (err, user) => {
         if (err) {
           res.json({
@@ -64,6 +116,13 @@ router.post('/editPassword', (req, res, next) => {
               msg: 'No se pudo editar la contraseña del administrador'
             });
           } else {
+            redisClient.hset(username, "password", newPassword, function(err, admin) {
+              if (err) {
+                console.log('No se pudo editar la contraseña en redis');
+              } else {
+                console.log('Se edito la contraseña exitosamente en redis');
+              }
+            });
             return res.json({
               success: true,
               msg: 'Se ha editado la contraseña correctamente'
@@ -151,6 +210,13 @@ router.post('/delete', (req, res, next) => {
               msg: 'No se pudo eliminar el administrador'
             });
           } else {
+            redisClient.hdel(username, "password", function(err, admin) {
+              if (err) {
+                console.log('No se pudo eliminar el admin en redis');
+              } else {
+                console.log('Se borro el admin exitosamente en redis');
+              }
+            });
             return res.json({
               success: true,
               msg: 'Administrador eliminado'
