@@ -5,7 +5,52 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 const Alumno = require('../models/alumno');
 
+// REDIS NEEDS
+const redis = require('redis');
+let redisClient = redis.createClient();
+redisClient.on('connect', function() {
+  console.log('Connected to redis for the Alumno');
+});
 
+// ROUTE TO SEARCH USER IN REDIS
+router.post('/searchAlumno', (req, res, next) => {
+  let matricula = req.body.matricula;
+
+  redisClient.hgetall(matricula, function(err, obj) {
+    if (!obj) {
+      return res.json({
+        success: false,
+        msg: 'No existe alumno con esa matricula'
+      });
+    } else {
+      return res.json({
+        success: true,
+        alumno: obj
+      });
+    }
+  });
+});
+
+// *** ROUTE TO CREATE USER IN REDIS ***
+//
+// router.post('/createAlumno', (req, res, next) => {
+//   let matricula = req.body.matricula;
+//   let password = req.body.password;
+//
+//   redisClient.hset(matricula, "password", password, function(err, alumno) {
+//     if (!alumno) {
+//       return res.json({
+//         success: false,
+//         msg: 'No se creo el alumno en redis'
+//       });
+//     } else {
+//       return res.json({
+//         success: true,
+//         msg: 'Se creo el alumno exitosamente en redis'
+//       });
+//     }
+//   });
+// });
 
 router.post('/register', (req, res, next) => {
   let newAlumno = new Alumno({
@@ -41,6 +86,13 @@ router.post('/register', (req, res, next) => {
           msg: 'No se pudo registrar al alumno'
         });
       } else {
+        redisClient.hset(newAlumno.matricula, "password", newAlumno.password, function(err, alumno) {
+          if (!alumno) {
+            console.log('No se creo el alumno en redis');
+          } else {
+            console.log('Se creo el alumno exitosamente en redis');
+          }
+        });
         res.json({
           success: true,
           msg: 'Alumno registrado'
@@ -124,6 +176,13 @@ router.post('/editPassword', (req, res, next) => {
               msg: 'No se pudo editar la contraseña del alumno'
             });
           } else {
+            redisClient.hset(matricula, "password", newPassword, function(err, alumno) {
+              if (err) {
+                console.log('No se pudo editar la contraseña en redis');
+              } else {
+                console.log('Se edito la contraseña exitosamente en redis');
+              }
+            });
             return res.json({
               success: true,
               msg: 'Se ha editado la contraseña correctamente'
@@ -259,6 +318,13 @@ router.post('/delete', (req, res, next) => {
           msg: 'No se pudo eliminar al alumno'
         });
       } else {
+        redisClient.hdel(matricula, "password", function(err, alumno) {
+          if (err) {
+            console.log('No se pudo eliminar el alumno en redis');
+          } else {
+            console.log('Se borro el alumno exitosamente en redis');
+          }
+        });
         res.json({
           success: true,
           msg: 'Alumno eliminado exitosamente'
