@@ -5,6 +5,53 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/database');
 const Profesor = require('../models/profesor');
 
+// REDIS NEEDS
+const redis = require('redis');
+let redisClient = redis.createClient();
+redisClient.on('connect', function() {
+  console.log('Connected to redis for the Profesor');
+});
+
+// ROUTE TO SEARCH USER IN REDIS
+router.post('/searchProfesor', (req, res, next) => {
+  let matricula = req.body.matricula;
+
+  redisClient.hgetall(matricula, function(err, obj) {
+    if (!obj) {
+      return res.json({
+        success: false,
+        msg: 'No existe profesor con esa matricula'
+      });
+    } else {
+      return res.json({
+        success: true,
+        profesor: obj
+      });
+    }
+  });
+});
+
+// *** ROUTE TO CREATE USER IN REDIS ***
+//
+// router.post('/createProfesor', (req, res, next) => {
+//   let matricula = req.body.matricula;
+//   let password = req.body.password;
+//
+//   redisClient.hset(matricula, "password", password, function(err, alumno) {
+//     if (!alumno) {
+//       return res.json({
+//         success: false,
+//         msg: 'No se creo el profesor en redis'
+//       });
+//     } else {
+//       return res.json({
+//         success: true,
+//         msg: 'Se creo el profesor exitosamente en redis'
+//       });
+//     }
+//   });
+// });
+
 router.post('/register', (req, res, next) => {
   let newProfesor = new Profesor({
     permiso: req.body.permiso,
@@ -27,20 +74,28 @@ router.post('/register', (req, res, next) => {
         success: false,
         msg: 'Ya existe un profesor con esa matricula'
       });
+    } else {
+      redisClient.hset(newProfesor.matricula, "password", newProfesor.password, function(err, profesor) {
+        if (!profesor) {
+          console.log('No se creo el profesor en redis');
+        } else {
+          console.log('Se creo el profesor exitosamente en redis');
+        }
+      });
+      Profesor.addProfesor(newProfesor, (err, profesor) => {
+        if (err) {
+          res.json({
+            success: false,
+            msg: 'No se pudo registrar a profesor'
+          });
+        } else {
+          res.json({
+            success: true,
+            msg: 'Profesor registrado'
+          });
+        }
+      });
     }
-    Profesor.addProfesor(newProfesor, (err, profesor) => {
-      if (err) {
-        res.json({
-          success: false,
-          msg: 'No se pudo registrar a profesor'
-        });
-      } else {
-        res.json({
-          success: true,
-          msg: 'Profesor registrado'
-        });
-      }
-    });
   });
 });
 
@@ -113,6 +168,13 @@ router.post('/editPassword', (req, res, next) => {
               msg: 'No se pudo editar la contraseña del profesor'
             });
           } else {
+            redisClient.hset(matricula, "password", newPassword, function(err, profesor) {
+              if (err) {
+                console.log('No se pudo editar la contraseña en redis');
+              } else {
+                console.log('Se edito la contraseña exitosamente en redis');
+              }
+            });
             return res.json({
               success: true,
               msg: 'Se ha editado la contraseña correctamente'
@@ -156,6 +218,13 @@ router.post('/delete', (req, res, next) => {
           msg: 'No se pudo eliminar al profesor'
         });
       } else {
+        redisClient.hdel(matricula, "password", function(err, profesor) {
+          if (err) {
+            console.log('No se pudo eliminar el profesor en redis');
+          } else {
+            console.log('Se borro el profesor exitosamente en redis');
+          }
+        });
         res.json({
           success: true,
           msg: 'Profesor eliminado exitosamente'
