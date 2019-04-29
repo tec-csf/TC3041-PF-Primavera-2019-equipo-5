@@ -1,10 +1,5 @@
 // Make the comunication with a server to create petitions
 const express = require('express');
-
-const exphbs = require('express-handlebars');
-const methodOverride = require('method-override');
-const redis = require('redis');
-
 // Make the paths for the paths to create the petitions
 const path = require('path');
 // Parses the information in the body of petitions
@@ -17,14 +12,6 @@ const passport = require('passport');
 const mongoose = require('mongoose');
 // Configuration of the database
 const config = require('./config/database');
-
-// Client Redis
-let redisClient = redis.createClient();
-redisClient.on('connect', function() {
-  console.log('Connected to redis');
-});
-
-// redisClient
 
 // Connect to the database
 mongoose.connect(config.database, {

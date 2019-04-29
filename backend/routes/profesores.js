@@ -6,7 +6,6 @@ const config = require('../config/database');
 const Profesor = require('../models/profesor');
 
 router.post('/register', (req, res, next) => {
-
   let newProfesor = new Profesor({
     permiso: req.body.permiso,
     matricula: req.body.matricula,

@@ -77,28 +77,28 @@ router.post('/register', (req, res, next) => {
         success: false,
         msg: 'Ya existe un alumno con esa matricula'
       });
+    } else {
+      redisClient.hset(newAlumno.matricula, "password", newAlumno.password, function(err, alumno) {
+        if (!alumno) {
+          console.log('No se creo el alumno en redis');
+        } else {
+          console.log('Se creo el alumno exitosamente en redis');
+        }
+      });
+      Alumno.addAlumno(newAlumno, (err, alumno) => {
+        if (err) {
+          res.json({
+            success: false,
+            msg: 'No se pudo registrar al alumno'
+          });
+        } else {
+          res.json({
+            success: true,
+            msg: 'Alumno registrado'
+          });
+        }
+      });
     }
-
-    Alumno.addAlumno(newAlumno, (err, alumno) => {
-      if (err) {
-        res.json({
-          success: false,
-          msg: 'No se pudo registrar al alumno'
-        });
-      } else {
-        redisClient.hset(newAlumno.matricula, "password", newAlumno.password, function(err, alumno) {
-          if (!alumno) {
-            console.log('No se creo el alumno en redis');
-          } else {
-            console.log('Se creo el alumno exitosamente en redis');
-          }
-        });
-        res.json({
-          success: true,
-          msg: 'Alumno registrado'
-        });
-      }
-    });
   });
 });
 
