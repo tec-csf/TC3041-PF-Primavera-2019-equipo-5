@@ -9,9 +9,11 @@ const Alumno = require('../models/alumno');
 const redis = require('redis');
 
 // *** LOCAL ***
+//
 // let redisClient = redis.createClient();
 
 // *** INTENTO 1 ***
+//
 var redisClient = redis.createClient(12972, 'redis-12972.c98.us-east-1-4.ec2.cloud.redislabs.com', {
   no_ready_check: true
 });
@@ -20,12 +22,13 @@ redisClient.auth('pIW2PDD9tPgIVC6eWAGtlkZic7zIZgNZ', function(err) {
 });
 
 // *** INTENTO 2 ***
+//
 // var redisClient = redis.createClient('redis://redis-12972.c98.us-east-1-4.ec2.cloud.redislabs.com:12972');
 // redisClient.auth('pIW2PDD9tPgIVC6eWAGtlkZic7zIZgNZ', function(err) {
 //   if (err) throw err;
 // });
 
-redisClient.on('connected', function() {
+redisClient.on('connect', function() {
   console.log('Connected to redis for the Alumno');
 });
 
