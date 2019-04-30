@@ -8,7 +8,18 @@ const Alumno = require('../models/alumno');
 
 // REDIS NEEDS
 const redis = require('redis');
-let redisClient = redis.createClient();
+const configRedis = require('../config/databaseRedis')
+
+// *** LOCAL ***
+// let redisClient = redis.createClient();
+
+var redisClient = redis.createClient(configRedis.port, configRedis.host, {
+  no_ready_check: true
+});
+redisClient.auth(configRedis.password, function(err) {
+  if (err) throw err;
+});
+
 redisClient.on('connect', function() {
   console.log('Connected to redis for the Admin');
 });

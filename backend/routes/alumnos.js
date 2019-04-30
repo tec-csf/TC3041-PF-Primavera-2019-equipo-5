@@ -7,35 +7,17 @@ const Alumno = require('../models/alumno');
 
 // REDIS NEEDS
 const redis = require('redis');
-let configRedis = {
-  host: 'redis-12774.c12.us-east-1-4.ec2.cloud.redislabs.com',
-  port: 12774,
-  password: 'JdhZYiNDEOlO7vYtDZAi2720NiFIwrwe'
-}
+const configRedis = require('../config/databaseRedis')
 
 // *** LOCAL ***
-//
 // let redisClient = redis.createClient();
 
-// *** INTENTO 1 ***
-//
 var redisClient = redis.createClient(configRedis.port, configRedis.host, {
   no_ready_check: true
 });
 redisClient.auth(configRedis.password, function(err) {
   if (err) throw err;
 });
-
-// *** INTENTO 2 ***
-//
-// var redisClient = redis.createClient('redis://' + configRedis.host + ':' + configRedis.port.toString());
-// redisClient.auth(configRedis.password, function(err) {
-//   if (err) throw err;
-// });
-
-// *** INTENTO 3 ***
-//
-// var redisClient = redis.createClient(configRedis);
 
 redisClient.on('connect', function() {
   console.log('Connected to redis for the Alumno');
