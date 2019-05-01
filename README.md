@@ -105,6 +105,47 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 *[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación del repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
 
+### Para ejecutarlo local con Minikube
+
+1. Clonar el repositorio de GitHub
+
+`git clone https://github.com/tec-csf/TC3041-PF-Primavera-2019-equipo-5.git`
+
+2. Iniciar el clúster de Minikube, asumiendo que ya lo tiene instalado. En caso contrario, instalar primero Minikube.
+
+`minikube start`
+
+3. Habilitar el contexto de Docker
+
+`eval $(minikube docker-env)`
+
+4. Carmbiarse a la carpeta del proyecto
+
+`cd TC3041-PF-Primavera-2019-equipo-5`
+
+5. Compilar las imágenes de Docker
+
+`docker build -t frontend-image frontend/.`
+
+`docker build -t backend-image backend/.`
+
+6. Desplegar la solución en el clúster de Kubernetes.
+
+`kubectl apply -f equipo5.yaml`
+
+7. Obtener la IP del clúster de Minikube
+
+`minikube ip``
+
+8. Obtener el puerto donde se encuentra escuchando el servicio
+
+`kubectl get svc`
+
+9. Acceder a la aplicación en un browser
+
+`http://<IP-Minikube>:<Puerto-Servicio>
+
+
 ## 4. Referencias
 
 *[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
