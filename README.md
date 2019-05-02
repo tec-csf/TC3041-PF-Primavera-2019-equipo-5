@@ -4,8 +4,8 @@
 ---
 
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]*
+1. * [Alejandra Tubilla](https://github.com/alejandratub)
+2. *[Joan Andoni](https://github.com/JoanAndoni)
 
 
 ---
