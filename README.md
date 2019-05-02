@@ -4,8 +4,8 @@
 ---
 
 ##### Integrantes:
-1. *[Poner aquí Nombre y Apellidos del integrante 1]*
-2. *[Poner aquí Nombre y Apellidos del integrante 2]*
+1. *[Joan Andoni González Rioz](https://github.com/JoanAndoni)
+2. *[Alejandra Tubilla Castellanos](https://github.com/alejandratub)
 
 
 ---
@@ -13,40 +13,44 @@
 
 ### 1.1 Requerimientos técnicos
 
-A continuación se mencionan los requerimientos técnicos mínimos del proyecto, favor de tenerlos presente para que cumpla con todos.
+- MongoDB 3.6.9
 
-* El equipo tiene la libertad de elegir las tecnologías de desarrollo a utilizar en el proyecto, sin embargo, debe tener presente que la solución final se deberá ejecutar en una plataforma en la nube. Puede ser  [Google Cloud Platform](https://cloud.google.com/?hl=es), [Azure](https://azure.microsoft.com/en-us/) o AWS [AWS](https://aws.amazon.com/es/free/).
-* El proyecto debe utilizar al menos dos modelos de bases de datos diferentes, de los estudiados en el curso.
-* La solución debe utilizar una arquitectura de microservicios. Si no tiene conocimiento sobre este tema, le recomiendo la lectura [*Microservices*](https://martinfowler.com/articles/microservices.html) de [Martin Fowler](https://martinfowler.com).
-* La arquitectura debe ser modular, escalable, con redundancia y alta disponibilidad.
-* La arquitectura deberá estar separada claramente por capas (*frontend*, *backend*, *API RESTful*, datos y almacenamiento).
-* Los diferentes componentes del proyecto (*frontend*, *backend*, *API RESTful*, bases de datos, entre otros) deberán ejecutarse sobre contenedores [Docker](https://www.docker.com/) y utilizar [Kubernetes](https://kubernetes.io/) como orquestador.
-* Todo el código, *datasets* y la documentación del proyecto debe alojarse en un repositorio de GitHub siguiendo al estructura que aparece a continuación.
+- node.js 11.9.0
+- npm 6.5.0
+
+- Angular CLI: 7.0.4
+- rxjs 6.3.3
+
+- Docker 18.09.2
+
+- Minikube 1.0.0
 
 ### 1.2 Estructura del repositorio
-El proyecto debe seguir la siguiente estructura de carpetas:
+
 ```
 - / 			        # Raíz de todo el proyecto
     - README.md			# Archivo con los datos del proyecto (este archivo)
-    - frontend			# Carpeta con la solución del frontend (Web app)
-    - backend			# Carpeta con la solución del backend (CMS)
-    - api			# Carpeta con la solución de la API
-    - datasets		        # Carpeta con los datasets y recursos utilizados (csv, json, audio, videos, entre otros)
+    - frontend			# Carpeta con la solución del frontend hecha en Angular 6 (Web app)
+    - backend			# Carpeta con la solución del backend hecho con node.js (CMS)
     - dbs			# Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
-    - models			# Carpeta donde se almacenarán los modelos de Machine Learning ya entrenados
-    - docs			# Carpeta con la documentación del proyecto
+    - backend/models			# Carpeta donde se almacenan los modelos de datos que utilizamos para este proyecto
+    <!-- - docs			# Carpeta con la documentación del proyecto
         - stage_f               # Documentos de la entrega final
-        - manuals               # Manuales y guías
+        - manuals               # Manuales y guías -->
 ```
 
 ### 1.3 Documentación  del proyecto
 
 Como parte de la entrega final del proyecto, se debe incluir la siguiente información:
 
-* Justificación de los modelo de *bases de datos* que seleccionaron.
+* Nosotros utilizamos dos diferentes bases de datos MongoDB y Redis estas implementadas en sus servicios de nube que tienen clusters para almacenar la información necesaria RedisLabs y Mongo Atlas respectivamente así mismo nustra solución nos demanda una base de datos orientada a documentos ya que tiene muchos datos que se van adicionando a los diferentes tipos de usuarios dependiendo de su rol asignado lo cual necesita este tipo de base de datos.
+
 * Descripción del o los *datasets* y las fuentes de información utilizadas.
+
 * Guía de configuración, instalación y despliegue de la solución en la plataforma en la nube  seleccionada.
+
 * Documentación de la API. Puede ver un ejemplo en [Swagger](https://swagger.io/).
+
 * El código debe estar documentado siguiendo los estándares definidos para el lenguaje de programación seleccionado.
 
 ## 2. Descripción del proyecto
@@ -143,7 +147,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 9. Acceder a la aplicación en un browser
 
-`http://<IP-Minikube>:<Puerto-Servicio>
+`http://<IP-Minikube>:<Puerto-Servicio>`
 
 
 ## 4. Referencias
