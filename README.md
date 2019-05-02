@@ -4,8 +4,8 @@
 ---
 
 ##### Integrantes:
-1. *[Joan Andoni González Rioz](https://github.com/JoanAndoni)
-2. *[Alejandra Tubilla Castellanos](https://github.com/alejandratub)
+1. [Joan Andoni González Rioz](https://github.com/JoanAndoni)
+2. [Alejandra Tubilla Castellanos](https://github.com/alejandratub)
 
 
 ---
