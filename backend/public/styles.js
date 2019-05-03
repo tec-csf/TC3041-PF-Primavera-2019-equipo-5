@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/andoni/Documents/Angular/ColegioMEAN_V1/angular-src/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/andoni/Documents/BasesDatosAvanzadas/TC3041-PF-Primavera-2019-equipo-5/frontend/src/styles.css */"./src/styles.css");
 
 
 /***/ })

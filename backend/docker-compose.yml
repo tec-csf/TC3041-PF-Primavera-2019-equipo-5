@@ -7,4 +7,5 @@ services:
     depends_on:
       - postgres
       - redis
+      - mongo
     command: ["./wait_for_it.sh", "--", "npm", "start"]

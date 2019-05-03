@@ -116,19 +116,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_admins_admins_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/admins/admins.component */ "./src/app/components/admins/admins.component.ts");
 /* harmony import */ var _components_admins_listar_admins_listar_admins_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/admins/listar-admins/listar-admins.component */ "./src/app/components/admins/listar-admins/listar-admins.component.ts");
 /* harmony import */ var _components_admins_agregar_admin_agregar_admin_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./components/admins/agregar-admin/agregar-admin.component */ "./src/app/components/admins/agregar-admin/agregar-admin.component.ts");
-/* harmony import */ var _components_grupos_ver_alumnos_grupo_ver_alumnos_grupo_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/grupos/ver-alumnos-grupo/ver-alumnos-grupo.component */ "./src/app/components/grupos/ver-alumnos-grupo/ver-alumnos-grupo.component.ts");
-/* harmony import */ var _services_validate_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./services/validate.service */ "./src/app/services/validate.service.ts");
-/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
-/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
-/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_28__);
-/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! @auth0/angular-jwt */ "./node_modules/@auth0/angular-jwt/index.js");
-/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
-/* harmony import */ var _guards_notAuth_guard__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./guards/notAuth.guard */ "./src/app/guards/notAuth.guard.ts");
-/* harmony import */ var _guards_alumno_guard__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./guards/alumno.guard */ "./src/app/guards/alumno.guard.ts");
-/* harmony import */ var _guards_alumnoAdmin_guard__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./guards/alumnoAdmin.guard */ "./src/app/guards/alumnoAdmin.guard.ts");
-/* harmony import */ var _guards_profesor_guard__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./guards/profesor.guard */ "./src/app/guards/profesor.guard.ts");
-/* harmony import */ var _guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./guards/profesorAdmin.guard */ "./src/app/guards/profesorAdmin.guard.ts");
-/* harmony import */ var _guards_admin_guard__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./guards/admin.guard */ "./src/app/guards/admin.guard.ts");
+/* harmony import */ var _components_admins_list_comentarios_list_comentarios_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./components/admins/list-comentarios/list-comentarios.component */ "./src/app/components/admins/list-comentarios/list-comentarios.component.ts");
+/* harmony import */ var _components_grupos_ver_alumnos_grupo_ver_alumnos_grupo_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./components/grupos/ver-alumnos-grupo/ver-alumnos-grupo.component */ "./src/app/components/grupos/ver-alumnos-grupo/ver-alumnos-grupo.component.ts");
+/* harmony import */ var _services_validate_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/validate.service */ "./src/app/services/validate.service.ts");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! @auth0/angular-jwt */ "./node_modules/@auth0/angular-jwt/index.js");
+/* harmony import */ var _guards_auth_guard__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./guards/auth.guard */ "./src/app/guards/auth.guard.ts");
+/* harmony import */ var _guards_notAuth_guard__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./guards/notAuth.guard */ "./src/app/guards/notAuth.guard.ts");
+/* harmony import */ var _guards_alumno_guard__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./guards/alumno.guard */ "./src/app/guards/alumno.guard.ts");
+/* harmony import */ var _guards_alumnoAdmin_guard__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./guards/alumnoAdmin.guard */ "./src/app/guards/alumnoAdmin.guard.ts");
+/* harmony import */ var _guards_profesor_guard__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./guards/profesor.guard */ "./src/app/guards/profesor.guard.ts");
+/* harmony import */ var _guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./guards/profesorAdmin.guard */ "./src/app/guards/profesorAdmin.guard.ts");
+/* harmony import */ var _guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./guards/admin.guard */ "./src/app/guards/admin.guard.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -164,6 +165,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 // Grupos
 
 // Services
@@ -183,17 +185,18 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 // Array for the routing
 var appRoutes = [
     { path: '', component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"] },
-    { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"], canActivate: [_guards_notAuth_guard__WEBPACK_IMPORTED_MODULE_31__["NotAuthGuard"]] },
-    { path: 'alumnos', component: _components_alumnos_alumnos_component__WEBPACK_IMPORTED_MODULE_13__["AlumnosComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_36__["AdminGuard"]] },
-    { path: 'verAlumno', component: _components_alumnos_ver_alumno_ver_alumno_component__WEBPACK_IMPORTED_MODULE_16__["VerAlumnoComponent"], canActivate: [_guards_alumnoAdmin_guard__WEBPACK_IMPORTED_MODULE_33__["AlumnoAdminGuard"]] },
-    { path: 'editarAlumno', component: _components_alumnos_editar_alumno_editar_alumno_component__WEBPACK_IMPORTED_MODULE_17__["EditarAlumnoComponent"], canActivate: [_guards_profesor_guard__WEBPACK_IMPORTED_MODULE_34__["ProfesorGuard"]] },
-    { path: 'profesores', component: _components_profesores_profesores_component__WEBPACK_IMPORTED_MODULE_18__["ProfesoresComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_36__["AdminGuard"]] },
-    { path: 'clases', component: _components_profesores_clases_clases_component__WEBPACK_IMPORTED_MODULE_21__["ClasesComponent"], canActivate: [_guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_35__["ProfesorAdminGuard"]] },
-    { path: 'grupo', component: _components_grupos_ver_alumnos_grupo_ver_alumnos_grupo_component__WEBPACK_IMPORTED_MODULE_25__["VerAlumnosGrupoComponent"], canActivate: [_guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_35__["ProfesorAdminGuard"]] },
-    { path: 'admins', component: _components_admins_admins_component__WEBPACK_IMPORTED_MODULE_22__["AdminsComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_36__["AdminGuard"]] },
+    { path: 'login', component: _components_login_login_component__WEBPACK_IMPORTED_MODULE_9__["LoginComponent"], canActivate: [_guards_notAuth_guard__WEBPACK_IMPORTED_MODULE_32__["NotAuthGuard"]] },
+    { path: 'alumnos', component: _components_alumnos_alumnos_component__WEBPACK_IMPORTED_MODULE_13__["AlumnosComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__["AdminGuard"]] },
+    { path: 'verAlumno', component: _components_alumnos_ver_alumno_ver_alumno_component__WEBPACK_IMPORTED_MODULE_16__["VerAlumnoComponent"], canActivate: [_guards_alumnoAdmin_guard__WEBPACK_IMPORTED_MODULE_34__["AlumnoAdminGuard"]] },
+    { path: 'editarAlumno', component: _components_alumnos_editar_alumno_editar_alumno_component__WEBPACK_IMPORTED_MODULE_17__["EditarAlumnoComponent"], canActivate: [_guards_profesor_guard__WEBPACK_IMPORTED_MODULE_35__["ProfesorGuard"]] },
+    { path: 'profesores', component: _components_profesores_profesores_component__WEBPACK_IMPORTED_MODULE_18__["ProfesoresComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__["AdminGuard"]] },
+    { path: 'clases', component: _components_profesores_clases_clases_component__WEBPACK_IMPORTED_MODULE_21__["ClasesComponent"], canActivate: [_guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_36__["ProfesorAdminGuard"]] },
+    { path: 'grupo', component: _components_grupos_ver_alumnos_grupo_ver_alumnos_grupo_component__WEBPACK_IMPORTED_MODULE_26__["VerAlumnosGrupoComponent"], canActivate: [_guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_36__["ProfesorAdminGuard"]] },
+    { path: 'admins', component: _components_admins_admins_component__WEBPACK_IMPORTED_MODULE_22__["AdminsComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__["AdminGuard"]] },
+    { path: 'comentarios', component: _components_admins_list_comentarios_list_comentarios_component__WEBPACK_IMPORTED_MODULE_25__["ListComentariosComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__["AdminGuard"]] },
     // Protect the following routes if youre logged in
-    { path: 'dashboard', component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["DashboardComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_36__["AdminGuard"]] },
-    { path: 'profile', component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_30__["AuthGuard"]] },
+    { path: 'dashboard', component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_11__["DashboardComponent"], canActivate: [_guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__["AdminGuard"]] },
+    { path: 'profile', component: _components_profile_profile_component__WEBPACK_IMPORTED_MODULE_12__["ProfileComponent"], canActivate: [_guards_auth_guard__WEBPACK_IMPORTED_MODULE_31__["AuthGuard"]] },
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -218,8 +221,9 @@ var AppModule = /** @class */ (function () {
                 _components_alumnos_ver_alumno_ver_alumno_component__WEBPACK_IMPORTED_MODULE_16__["VerAlumnoComponent"],
                 _components_admins_listar_admins_listar_admins_component__WEBPACK_IMPORTED_MODULE_23__["ListarAdminsComponent"],
                 _components_profesores_clases_clases_component__WEBPACK_IMPORTED_MODULE_21__["ClasesComponent"],
-                _components_grupos_ver_alumnos_grupo_ver_alumnos_grupo_component__WEBPACK_IMPORTED_MODULE_25__["VerAlumnosGrupoComponent"],
-                _components_alumnos_editar_alumno_editar_alumno_component__WEBPACK_IMPORTED_MODULE_17__["EditarAlumnoComponent"]
+                _components_grupos_ver_alumnos_grupo_ver_alumnos_grupo_component__WEBPACK_IMPORTED_MODULE_26__["VerAlumnosGrupoComponent"],
+                _components_alumnos_editar_alumno_editar_alumno_component__WEBPACK_IMPORTED_MODULE_17__["EditarAlumnoComponent"],
+                _components_admins_list_comentarios_list_comentarios_component__WEBPACK_IMPORTED_MODULE_25__["ListComentariosComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -228,9 +232,9 @@ var AppModule = /** @class */ (function () {
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot(appRoutes),
                 _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbModule"].forRoot(),
-                angular2_flash_messages__WEBPACK_IMPORTED_MODULE_28__["FlashMessagesModule"].forRoot(),
+                angular2_flash_messages__WEBPACK_IMPORTED_MODULE_29__["FlashMessagesModule"].forRoot(),
                 // JWT set the JWT module with the local storage token
-                _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_29__["JwtModule"].forRoot({
+                _auth0_angular_jwt__WEBPACK_IMPORTED_MODULE_30__["JwtModule"].forRoot({
                     config: {
                         tokenGetter: function () {
                             return localStorage.getItem('id_token');
@@ -239,15 +243,15 @@ var AppModule = /** @class */ (function () {
                 })
             ],
             providers: [
-                _services_validate_service__WEBPACK_IMPORTED_MODULE_26__["ValidateService"],
-                _services_auth_service__WEBPACK_IMPORTED_MODULE_27__["AuthService"],
-                _guards_auth_guard__WEBPACK_IMPORTED_MODULE_30__["AuthGuard"],
-                _guards_notAuth_guard__WEBPACK_IMPORTED_MODULE_31__["NotAuthGuard"],
-                _guards_alumno_guard__WEBPACK_IMPORTED_MODULE_32__["AlumnoGuard"],
-                _guards_alumnoAdmin_guard__WEBPACK_IMPORTED_MODULE_33__["AlumnoAdminGuard"],
-                _guards_profesor_guard__WEBPACK_IMPORTED_MODULE_34__["ProfesorGuard"],
-                _guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_35__["ProfesorAdminGuard"],
-                _guards_admin_guard__WEBPACK_IMPORTED_MODULE_36__["AdminGuard"]
+                _services_validate_service__WEBPACK_IMPORTED_MODULE_27__["ValidateService"],
+                _services_auth_service__WEBPACK_IMPORTED_MODULE_28__["AuthService"],
+                _guards_auth_guard__WEBPACK_IMPORTED_MODULE_31__["AuthGuard"],
+                _guards_notAuth_guard__WEBPACK_IMPORTED_MODULE_32__["NotAuthGuard"],
+                _guards_alumno_guard__WEBPACK_IMPORTED_MODULE_33__["AlumnoGuard"],
+                _guards_alumnoAdmin_guard__WEBPACK_IMPORTED_MODULE_34__["AlumnoAdminGuard"],
+                _guards_profesor_guard__WEBPACK_IMPORTED_MODULE_35__["ProfesorGuard"],
+                _guards_profesorAdmin_guard__WEBPACK_IMPORTED_MODULE_36__["ProfesorAdminGuard"],
+                _guards_admin_guard__WEBPACK_IMPORTED_MODULE_37__["AdminGuard"]
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
@@ -424,6 +428,181 @@ var AgregarAdminComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/admins/list-comentarios/list-comentarios.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/components/admins/list-comentarios/list-comentarios.component.css ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWRtaW5zL2xpc3QtY29tZW50YXJpb3MvbGlzdC1jb21lbnRhcmlvcy5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/components/admins/list-comentarios/list-comentarios.component.html":
+/*!************************************************************************************!*\
+  !*** ./src/app/components/admins/list-comentarios/list-comentarios.component.html ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf=\"user?.comentarios.length > 0\" class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n\n  <h1 *ngIf=\"!editComentario\">Comentarios</h1>\n  <h1 *ngIf=\"editComentario\">Editar comentario</h1>\n\n  <div *ngIf=\"!editComentario\">\n    <div *ngFor=\"let comentario of user?.comentarios; index as i\" class=\"overflow-hidden position-relative p-4 m-md-1 bg-light\">\n      <div class=\"row\">\n        <div class=\"col-md-12 pull-left text-left\">\n          <div class=\"d-flex justify-content-between\">\n            <h3 class=\"mb-1\">{{ comentario.titulo }}</h3>\n          </div>\n          <h4 class=\"list-group-item-heading m-1\">Alumno: {{ comentario.matricula }}</h4>\n          <h6 class=\"list-group-item-heading m-1\">Profesor: {{ comentario.profesor }}</h6>\n          <h6 class=\"list-group-item-heading m-1\">Materia: {{ comentario.materia }}</h6>\n          <div class=\"row\">\n            <div class=\"col-md-12\">\n              <p class=\"m-2\">{{ comentario.texto }}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div *ngIf=\"this.authService.adminLoggedIn()\" class=\"modal-footer\">\n        <button type=\"button\" (click)=\"eliminarComentario(comentario.matricula, comentario.titulo)\" class=\"btn btn-outline-danger btn-md m-2\">No autorizar</button>\n        <button type=\"button\" (click)=\"editarComentario(comentario.matricula, comentario.profesor, comentario.materia, comentario.titulo, comentario.texto)\" class=\"btn btn-outline-warning btn-md m-2\">Editar</button>\n        <button type=\"button\" (click)=\"autorizarComentario(comentario.matricula, comentario.profesor, comentario.materia, comentario.titulo, comentario.texto)\" class=\"btn btn-outline-success btn-md m-2\">Autorizar</button>\n      </div>\n    </div>\n  </div>\n\n  <div *ngIf=\"editComentario\" class=\"overflow-hidden position-relative p-4 m-md-1 bg-light\">\n    <div class=\"row\">\n      <div class=\"col-md-12 pull-left text-left\">\n        <div class=\"d-flex justify-content-between\">\n          <h3 class=\"mb-1\">{{ this.comentarioEdit.titulo }}</h3>\n        </div>\n        <h4 class=\"list-group-item-heading m-1\">Alumno: {{ this.comentarioEdit.matricula }}</h4>\n        <h6 class=\"list-group-item-heading m-1\">Profesor: {{ this.comentarioEdit.profesor }}</h6>\n        <h6 class=\"list-group-item-heading m-1\">Materia: {{ this.comentarioEdit.materia }}</h6>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <textarea class=\"form-control\" name=\"comentarioTexto\" [(ngModel)]=\"this.comentarioEdit.texto\" placeholder=\"Comentario . .\" [ngModelOptions]=\"{standalone: true}\" rows=\"4\"></textarea>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div class=\"modal-footer\">\n      <button type=\"button\" (click)=\"cancelarPost()\" class=\"btn btn-danger\">Cancelar</button>\n      <button type=\"button\" (click)=\"editarPost()\" class=\"btn btn-info\">Aceptar</button>\n    </div>\n  </div>\n\n</div>\n\n<div *ngIf=\"user?.comentarios.length == 0\" class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <h1>No hay comentarios para revisar</h1>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/admins/list-comentarios/list-comentarios.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/components/admins/list-comentarios/list-comentarios.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: ListComentariosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListComentariosComponent", function() { return ListComentariosComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+// Import of the module for the flash messages
+
+
+var ListComentariosComponent = /** @class */ (function () {
+    function ListComentariosComponent(flashMessage, authService, router) {
+        this.flashMessage = flashMessage;
+        this.authService = authService;
+        this.router = router;
+    }
+    ListComentariosComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.editComentario = false;
+        this.authService.getProfileAdmin().subscribe(function (profile) {
+            _this.user = profile.admin;
+        }, function (err) {
+            console.log(err);
+            return false;
+        });
+    };
+    ListComentariosComponent.prototype.eliminarComentario = function (matricula, titulo) {
+        var _this = this;
+        var comentario = {
+            matricula: matricula,
+            titulo: titulo
+        };
+        this.authService.eliminarAdminComentario(comentario).subscribe(function (data) {
+            if (data.success) {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-success', timeout: 3000 });
+            }
+            else {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
+            }
+            _this.ngOnInit();
+        });
+    };
+    ListComentariosComponent.prototype.editarComentario = function (matricula, profesor, materia, titulo, texto) {
+        this.editComentario = true;
+        this.comentarioEdit = {
+            matricula: matricula,
+            titulo: titulo,
+            texto: texto,
+            profesor: profesor,
+            materia: materia
+        };
+    };
+    ListComentariosComponent.prototype.cancelarPost = function () {
+        this.editComentario = false;
+    };
+    ListComentariosComponent.prototype.editarPost = function () {
+        var _this = this;
+        var comentario = {
+            matricula: this.comentarioEdit.matricula,
+            titulo: this.comentarioEdit.titulo,
+            texto: this.comentarioEdit.texto
+        };
+        this.authService.editarAdminComentario(comentario).subscribe(function (data) {
+            if (data.success) {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
+            }
+            else {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
+            }
+            _this.ngOnInit();
+            _this.comentarioEdit = null;
+        });
+        this.editComentario = false;
+    };
+    ListComentariosComponent.prototype.autorizarComentario = function (matricula, profesor, nombreMateria, titulo, texto) {
+        var _this = this;
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10)
+            dd = '0' + dd;
+        if (mm < 10)
+            mm = '0' + mm;
+        today = mm + '/' + dd + '/' + yyyy;
+        this.fecha = today;
+        var comentario = {
+            matricula: matricula,
+            profesor: profesor,
+            materia: nombreMateria,
+            fecha: this.fecha,
+            titulo: titulo,
+            texto: texto
+        };
+        this.authService.agregarComentario(comentario).subscribe(function (data) {
+            if (data.success) {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-success', timeout: 3000 });
+                var comentarioEliminar = {
+                    matricula: matricula,
+                    titulo: titulo
+                };
+                _this.authService.eliminarAdminComentario(comentarioEliminar).subscribe(function (data) {
+                    if (data.success) {
+                        // this.flashMessage.show(data.msg, { cssClass: 'alert-success', timeout: 3000 });
+                    }
+                    else {
+                        _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
+                    }
+                    _this.ngOnInit();
+                });
+            }
+            else {
+                _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
+            }
+            _this.ngOnInit();
+        });
+    };
+    ListComentariosComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-list-comentarios',
+            template: __webpack_require__(/*! ./list-comentarios.component.html */ "./src/app/components/admins/list-comentarios/list-comentarios.component.html"),
+            styles: [__webpack_require__(/*! ./list-comentarios.component.css */ "./src/app/components/admins/list-comentarios/list-comentarios.component.css")]
+        }),
+        __metadata("design:paramtypes", [angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__["FlashMessagesService"],
+            _services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    ], ListComentariosComponent);
+    return ListComentariosComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/admins/listar-admins/listar-admins.component.css":
 /*!*****************************************************************************!*\
   !*** ./src/app/components/admins/listar-admins/listar-admins.component.css ***!
@@ -524,7 +703,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"position-relative overflow-hidden p-3 m-md-1 bg-light\">\n  <form>\n    <h2>Agregar Alumno</h2><br>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 col-form-label p-2 text-center\">Matricula</label>\n      <div class=\"col-sm-7 pull-left text-left\">\n        <input type=\"text\" class=\"form-control\" name=\"matricula\" [(ngModel)]=\"matricula\" placeholder=\"Matricula . .\" [ngModelOptions]=\"{standalone: true}\">\n        <small id=\"passwordHelpBlock\" class=\"form-text text-muted\">\n          Ejemplo: K208 <br>\n          (k)208 - Nivel Escolar <br>\n          K: Preescolar<br>\n          P: Primaria <br>\n          S: Secundaria <br>\n          k(2)08 - Número de grado <br>\n          k2(08) - Número de alumno\n        </small>\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">CURP</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"curp\" [(ngModel)]=\"curp\" placeholder=\"CURP . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Nombre(s)</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"nombre\" [(ngModel)]=\"nombre\" placeholder=\"Nombre(s) . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Apellido Paterno</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"paterno\" [(ngModel)]=\"paterno\" placeholder=\"Paterno . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Apellido Materno</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"materno\" [(ngModel)]=\"materno\" placeholder=\"Materno . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Nivel</label>\n      <div class=\"col-sm-7 pull-left text-left\">\n        <input type=\"radio\" value=\"Preescolar\" name=\"nivel\" [(ngModel)]=\"nivel\" required> Preescolar\n        <br>\n        <input type=\"radio\" value=\"Primaria\" name=\"nivel\" [(ngModel)]=\"nivel\" required> Primaria\n        <br>\n        <input type=\"radio\" value=\"Secundaria\" name=\"nivel\" [(ngModel)]=\"nivel\" required> Secundaria\n      </div>\n    </div>\n\n    <div class=\" form-group row\">\n      <label for=\"grado\" class=\"col-sm-5 p-2 col-form-label\">Grado</label>\n      <div class=\"col-sm-7\">\n        <input type=\"number\" class=\"form-control\" name=\"grado\" [(ngModel)]=\"grado\" placeholder=\"Grado . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Grupo</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"grupo\" [(ngModel)]=\"grupo\" placeholder=\"Grupo . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Fecha de nacimiento</label>\n      <div class=\"col-sm-7\">\n        <input type=\"date\" class=\"form-control\" name=\"fecha\" [(ngModel)]=\"fechaNacimiento\" placeholder=\"Fecha de nacimiento . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Contraseña</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"contrasena\" [(ngModel)]=\"password\" placeholder=\"Contraseña . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Confirmación de contraseña</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"confirmacion\" [(ngModel)]=\"passwordConfirmation\" placeholder=\"Confirmacion . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <div class=\"col-sm-12\" *ngIf=\"matricula && curp && nombre && paterno && materno && grado && fechaNacimiento && password && passwordConfirmation\">\n        <button type=\"submit\" (click)=\"agregarAlumno()\" class=\"btn btn-primary btn-md btn-block\">Confirmar</button>\n      </div>\n    </div>\n\n  </form>\n</div>"
+module.exports = "<div class=\"position-relative overflow-hidden p-3 m-md-1 bg-light\">\n  <form>\n    <h2>Agregar Alumno</h2><br>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 col-form-label p-2 text-center\">Matricula</label>\n      <div class=\"col-sm-7 pull-left text-left\">\n        <input type=\"text\" class=\"form-control\" name=\"matricula\" [(ngModel)]=\"matricula\" placeholder=\"Matricula . .\" [ngModelOptions]=\"{standalone: true}\">\n        <small id=\"passwordHelpBlock\" class=\"form-text text-muted\">\n          Ejemplo: K208 <br>\n          (k)208 - Nivel Escolar <br>\n          K: Preescolar<br>\n          P: Primaria <br>\n          S: Secundaria <br>\n          k(2)08 - Número de grado <br>\n          k2(08) - Número de alumno\n        </small>\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">CURP</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"curp\" [(ngModel)]=\"curp\" placeholder=\"CURP . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Nombre(s)</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"nombre\" [(ngModel)]=\"nombre\" placeholder=\"Nombre(s) . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Apellido Paterno</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"paterno\" [(ngModel)]=\"paterno\" placeholder=\"Paterno . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Apellido Materno</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"materno\" [(ngModel)]=\"materno\" placeholder=\"Materno . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Nivel</label>\n      <div class=\"col-sm-7 pull-left text-left\">\n        <input type=\"radio\" value=\"Preescolar\" name=\"nivel\" [(ngModel)]=\"nivel\" required> Preescolar\n        <br>\n        <input type=\"radio\" value=\"Primaria\" name=\"nivel\" [(ngModel)]=\"nivel\" required> Primaria\n        <br>\n        <input type=\"radio\" value=\"Secundaria\" name=\"nivel\" [(ngModel)]=\"nivel\" required> Secundaria\n      </div>\n    </div>\n\n    <div class=\" form-group row\">\n      <label for=\"grado\" class=\"col-sm-5 p-2 col-form-label\">Grado</label>\n      <div class=\"col-sm-7\">\n        <input type=\"number\" class=\"form-control\" name=\"grado\" [(ngModel)]=\"grado\" placeholder=\"Grado . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Grupo</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"grupo\" [(ngModel)]=\"grupo\" placeholder=\"Grupo . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Fecha de nacimiento</label>\n      <div class=\"col-sm-7\">\n        <input type=\"date\" class=\"form-control\" name=\"fecha\" [(ngModel)]=\"fechaNacimiento\" placeholder=\"Fecha de nacimiento . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Email de contacto</label>\n      <div class=\"col-sm-7\">\n        <input type=\"email\" class=\"form-control\" name=\"email\" [(ngModel)]=\"email\" placeholder=\"Email . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Contraseña</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"contrasena\" [(ngModel)]=\"password\" placeholder=\"Contraseña . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-5 p-2 col-form-label\">Confirmación de contraseña</label>\n      <div class=\"col-sm-7\">\n        <input type=\"text\" class=\"form-control\" name=\"confirmacion\" [(ngModel)]=\"passwordConfirmation\" placeholder=\"Confirmacion . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <div class=\"col-sm-12\" *ngIf=\"matricula && curp && nombre && paterno && materno && grado && fechaNacimiento && email && password && passwordConfirmation\">\n        <button type=\"submit\" (click)=\"agregarAlumno()\" class=\"btn btn-primary btn-md btn-block\">Confirmar</button>\n      </div>\n    </div>\n\n  </form>\n</div>"
 
 /***/ }),
 
@@ -581,6 +760,7 @@ var AgregarAlumnoComponent = /** @class */ (function () {
             grado: this.grado,
             grupo: this.grupo,
             fechaNacimiento: this.fechaNacimiento,
+            email: this.email,
             password: this.password
         };
         if (this.password === this.passwordConfirmation) {
@@ -596,6 +776,7 @@ var AgregarAlumnoComponent = /** @class */ (function () {
                     _this.grado = null;
                     _this.grupo = null;
                     _this.fechaNacimiento = null;
+                    _this.email = null;
                     _this.password = null;
                     _this.passwordConfirmation = null;
                 }
@@ -706,7 +887,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <h1>Calificaciones de {{alumno?.nombre}} {{alumno?.materno}} {{alumno?.paterno}}</h1>\n  <div class=\"table-responsive\">\n    <table class=\"table table-striped table-sm\">\n      <thead>\n        <tr>\n          <th> </th>\n          <th class=\"font-weight-bold\">Primer trimestre</th>\n          <th class=\"font-weight-bold\">Segundo trimestre</th>\n          <th class=\"font-weight-bold\">Tercer trimestre</th>\n          <th class=\"font-weight-bold\">Promedio por materia</th>\n        </tr>\n      </thead>\n      <tbody *ngFor=\"let materia of alumno?.materias; index as i\">\n        <tr *ngIf=\"materia.nombreMateria === grupo.nombreMateria\">\n          <td class=\"font-weight-bold\">{{materia.nombreMateria}}</td>\n          <td>{{materia.calificaciones[0]}}</td>\n          <td>{{materia.calificaciones[1]}}</td>\n          <td>{{materia.calificaciones[2]}}</td>\n          <td class=\"font-weight-bold\">{{promediosMaterias[i]}}</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n\n  <div *ngIf=\"this.authService.profesorLoggedIn()\">\n    <div class=\"row justify-content-around\">\n      <div class=\"col-md-6 overflow-hidden position-relative p-4 m-md-1 bg-light\">\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <h3 class=\"mb-1\">Calificar materia</h3>\n            <hr class=\"featurette-divider\">\n            <div class=\"form-group row\">\n              <label class=\"col-sm-5 p-2 col-form-label\">Trimestre</label>\n              <div class=\"col-sm-7 pull-left text-left\">\n                <input type=\"number\" class=\"form-control\" name=\"trimestre\" [(ngModel)]=\"trimestre\" placeholder=\"Trimestre . .\" [ngModelOptions]=\"{standalone: true}\">\n              </div>\n            </div>\n\n            <div class=\" form-group row\">\n              <label class=\"col-sm-5 p-2 col-form-label\">Nombre de la materia</label>\n              <div *ngFor=\"let materia of alumno?.materias; index as i\">\n                <div class=\"col-sm-12\" *ngIf=\"materia.nombreMateria === grupo.nombreMateria\">\n                  <select class=\"form-control\" [(ngModel)]=\"materiaCalificaciones\">\n                    <option [value]=\"materia.nombreMateria\">{{materia.nombreMateria}}</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n\n            <div class=\" form-group row\">\n              <label class=\"col-sm-5 p-2 col-form-label\">Calificación</label>\n              <div class=\"col-sm-7\">\n                <input type=\"number\" class=\"form-control\" name=\"calificacion\" [(ngModel)]=\"calificacion\" placeholder=\"Calificación . .\" [ngModelOptions]=\"{standalone: true}\">\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"modal-footer\">\n          <button type=\"button\" (click)=\"calificarMateria()\" class=\"btn btn-outline-info\">Calificar</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <h1>Comentarios</h1>\n  <hr class=\"featurette-divider\">\n  <div *ngFor=\"let comentario of alumno?.comentarios; index as i\">\n    <div *ngIf=\"comentario.materia === grupo.nombreMateria\" class=\"row overflow-hidden position-relative p-4 m-md-1 bg-light\">\n      <div class=\"col-md-12 pull-left text-left\">\n        <div class=\"d-flex justify-content-between\">\n          <h3 class=\"mb-1\">{{ comentario.titulo }}</h3>\n          <p class=\"mb-1\">{{ comentario.fecha }}</p>\n        </div>\n        <h6 class=\"list-group-item-heading m-1\">Profesor: {{ comentario.profesor }}</h6>\n        <h6 class=\"list-group-item-heading m-1\">Materia: {{ comentario.materia }}</h6>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <p class=\"m-2\">{{ comentario.texto }}</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\">Agregar comentario</h5>\n      </div>\n      <div class=\"modal-body\">\n        <div class=\"position-relative overflow-hidden p-3 m-md-1\">\n          <div class=\"form-group\">\n            <label class=\"col-md-12 p-2 col-form-label\">Titulo</label>\n            <div class=\"form-group row\">\n              <div class=\"col-sm-12\">\n                <input type=\"text\" class=\"form-control\" name=\"titulo\" [(ngModel)]=\"titulo\" placeholder=\"Titulo . .\" [ngModelOptions]=\"{standalone: true}\">\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <textarea class=\"form-control\" name=\"comentario\" [(ngModel)]=\"comentario\" placeholder=\"Comentario . .\" [ngModelOptions]=\"{standalone: true}\" rows=\"4\"></textarea>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" (click)=\"comentar()\" class=\"btn btn-primary\">Comentar</button>\n      </div>\n    </div>\n  </div>\n\n</div>"
+module.exports = "<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <h1>Calificaciones de {{alumno?.nombre}} {{alumno?.materno}} {{alumno?.paterno}}</h1>\n  <div class=\"table-responsive\">\n    <table class=\"table table-striped table-sm\">\n      <thead>\n        <tr>\n          <th> </th>\n          <th class=\"font-weight-bold\">Primer trimestre</th>\n          <th class=\"font-weight-bold\">Segundo trimestre</th>\n          <th class=\"font-weight-bold\">Tercer trimestre</th>\n          <th class=\"font-weight-bold\">Promedio por materia</th>\n        </tr>\n      </thead>\n      <tbody *ngFor=\"let materia of alumno?.materias; index as i\">\n        <tr *ngIf=\"materia.nombreMateria === grupo.nombreMateria\">\n          <td class=\"font-weight-bold\">{{materia.nombreMateria}}</td>\n          <td>{{materia.calificaciones[0]}}</td>\n          <td>{{materia.calificaciones[1]}}</td>\n          <td>{{materia.calificaciones[2]}}</td>\n          <td class=\"font-weight-bold\">{{promediosMaterias[i]}}</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n\n  <div *ngIf=\"this.authService.profesorLoggedIn()\">\n    <div class=\"row justify-content-around\">\n      <div class=\"col-md-6 overflow-hidden position-relative p-4 m-md-1 bg-light\">\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <h3 class=\"mb-1\">Calificar materia</h3>\n            <hr class=\"featurette-divider\">\n            <div class=\"form-group row\">\n              <label class=\"col-sm-5 p-2 col-form-label\">Trimestre</label>\n              <div class=\"col-sm-7 pull-left text-left\">\n                <input type=\"number\" class=\"form-control\" name=\"trimestre\" [(ngModel)]=\"trimestre\" placeholder=\"Trimestre . .\" [ngModelOptions]=\"{standalone: true}\">\n              </div>\n            </div>\n\n            <div class=\" form-group row\">\n              <label class=\"col-sm-5 p-2 col-form-label\">Nombre de la materia</label>\n              <div *ngFor=\"let materia of alumno?.materias; index as i\">\n                <div class=\"col-sm-12\" *ngIf=\"materia.nombreMateria === grupo.nombreMateria\">\n                  <select class=\"form-control\" [(ngModel)]=\"materiaCalificaciones\">\n                    <option [value]=\"materia.nombreMateria\">{{materia.nombreMateria}}</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n\n            <div class=\" form-group row\">\n              <label class=\"col-sm-5 p-2 col-form-label\">Calificación</label>\n              <div class=\"col-sm-7\">\n                <input type=\"number\" class=\"form-control\" name=\"calificacion\" [(ngModel)]=\"calificacion\" placeholder=\"Calificación . .\" [ngModelOptions]=\"{standalone: true}\">\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"modal-footer\">\n          <button type=\"button\" (click)=\"calificarMateria()\" class=\"btn btn-outline-info\">Calificar</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <h1>Comentarios</h1>\n  <hr class=\"featurette-divider\">\n  <div *ngFor=\"let comentario of alumno?.comentarios; index as i\">\n    <div *ngIf=\"comentario.materia === grupo.nombreMateria\" class=\"row overflow-hidden position-relative p-4 m-md-1 bg-light\">\n      <div class=\"col-md-12 pull-left text-left\">\n        <div class=\"d-flex justify-content-between\">\n          <h3 class=\"mb-1\">{{ comentario.titulo }}</h3>\n          <p class=\"mb-1\">{{ comentario.fecha }}</p>\n        </div>\n        <h6 class=\"list-group-item-heading m-1\">Profesor: {{ comentario.profesor }}</h6>\n        <h6 class=\"list-group-item-heading m-1\">Materia: {{ comentario.materia }}</h6>\n        <div class=\"row\">\n          <div class=\"col-md-12\">\n            <p class=\"m-2\">{{ comentario.texto }}</p>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\">Agregar comentario</h5>\n      </div>\n      <div class=\"modal-body\">\n        <div class=\"position-relative overflow-hidden p-3 m-md-1\">\n          <div class=\"form-group\">\n            <label class=\"col-md-12 p-2 col-form-label\">Titulo</label>\n            <div class=\"form-group row\">\n              <div class=\"col-sm-12\">\n                <input type=\"text\" class=\"form-control\" name=\"titulo\" [(ngModel)]=\"titulo\" placeholder=\"Titulo . .\" [ngModelOptions]=\"{standalone: true}\">\n              </div>\n            </div>\n            <div class=\"form-group row\">\n              <textarea class=\"form-control\" name=\"comentario\" [(ngModel)]=\"comentario\" placeholder=\"Comentario . .\" [ngModelOptions]=\"{standalone: true}\" rows=\"4\"></textarea>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" (click)=\"comentar()\" class=\"btn btn-primary\">Mandar comentario a revisión</button>\n      </div>\n    </div>\n  </div>\n\n</div>"
 
 /***/ }),
 
@@ -750,16 +931,6 @@ var EditarAlumnoComponent = /** @class */ (function () {
     }
     EditarAlumnoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1;
-        var yyyy = today.getFullYear();
-        if (dd < 10)
-            dd = '0' + dd;
-        if (mm < 10)
-            mm = '0' + mm;
-        today = mm + '/' + dd + '/' + yyyy;
-        this.fecha = today;
         this.matricula = this.authService.getMatriculaAlumno();
         this.grupo = this.authService.getGrupo();
         var alumno = {
@@ -798,11 +969,10 @@ var EditarAlumnoComponent = /** @class */ (function () {
             matricula: this.matricula,
             profesor: this.grupo.profesor,
             materia: this.grupo.nombreMateria,
-            fecha: this.fecha,
             titulo: this.titulo,
             texto: this.comentario
         };
-        this.authService.agregarComentario(comentario).subscribe(function (data) {
+        this.authService.agregarAdminComentario(comentario).subscribe(function (data) {
             if (data.success) {
                 _this.flashMessage.show(data.msg, { cssClass: 'alert-success', timeout: 3000 });
             }
@@ -871,7 +1041,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"position-relative overflow-hidden p-3 m-md-1 bg-light\">\n  <form>\n    <h2>Buscar Alumnos</h2><br>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-4 p-2 col-form-label\">Por matricula</label>\n      <div class=\"col-sm-8 pull-left text-left\">\n        <input type=\"text\" class=\"form-control\" name=\"matricula\" [(ngModel)]=\"matricula\" placeholder=\"Matricula . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <hr class=\"featurette-divider\">\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-4 p-2 col-form-label\">Por nombre(s)</label>\n      <div class=\"col-sm-8\">\n        <input type=\"text\" class=\"form-control\" name=\"nombre\" [(ngModel)]=\"nombre\" placeholder=\"Nombre(s) . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <hr class=\"featurette-divider\">\n\n    <label class=\"col-sm-4 p-2 col-form-label\">Por grupo</label>\n    <div class=\"form-group row\">\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" name=\"nivel\" [(ngModel)]=\"nivel\" placeholder=\"Nivel . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n      <div class=\"col-sm-4\">\n        <input type=\"number\" class=\"form-control\" name=\"grado\" [(ngModel)]=\"grado\" placeholder=\"Grado . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" name=\"grupo\" [(ngModel)]=\"grupo\" placeholder=\"Grupo . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <div class=\"col-sm-12\" *ngIf=\"matricula && !nombre && !nivel && !grado && !grupo\">\n        <button type=\"submit\" (click)=\"buscarAlumnoMatricula()\" class=\"btn btn-primary btn-md btn-block\">Buscar</button>\n      </div>\n      <div class=\"col-sm-12\" *ngIf=\"!matricula && nombre && !nivel && !grado && !grupo\">\n        <button type=\"submit\" (click)=\"buscarAlumnosNombre()\" class=\"btn btn-primary btn-md btn-block\">Buscar</button>\n      </div>\n      <div class=\"col-sm-12\" *ngIf=\"!matricula && !nombre && nivel && grado && grupo\">\n        <button type=\"submit\" (click)=\"buscarAlumnosGrupo()\" class=\"btn btn-primary btn-md btn-block\">Buscar</button>\n      </div>\n    </div>\n  </form>\n</div>\n\n<hr *ngIf=\"alumnos\" class=\"featurette-divider\">\n<div *ngFor=\"let alumno of alumnos\" class=\"overflow-hidden position-relative p-4 m-md-1 bg-light\">\n  <div class=\"row\">\n    <div class=\"col-md-9 pull-left text-left\">\n      <h4 class=\"list-group-item-heading m-1\">{{ alumno.nombre }} {{ alumno.paterno }} {{ alumno.materno }}</h4>\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <p class=\"font-weight-bold text-uppercase m-1\">Matricula: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">CURP: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nivel: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grado: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grupo: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nacimiento: </p>\n        </div>\n        <div class=\"col-md-8\">\n          <p class=\"list-group-item-text m-1\">{{ alumno.matricula }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.curp }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.nivel }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.grado }}°</p>\n          <p class=\"list-group-item-text m-1\">\"{{ alumno.grupo }}\"</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.fechaNacimiento }}</p>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3 pull-right\">\n      <br>\n      <button type=\"button\" (click)=\"verAlumno(alumno.matricula)\" class=\"btn btn-outline-info btn-md btn-block\">Ver</button>\n      <br><br>\n      <button type=\"button\" (click)=\"eliminarAlumno(alumno.matricula)\" class=\"btn btn-outline-danger btn-md btn-block\">Eliminar</button>\n    </div>\n  </div>\n</div>\n\n<hr *ngIf=\"alumno\" class=\"featurette-divider\">\n<div *ngIf=\"alumno\" class=\"overflow-hidden position-relative p-4 m-md-1 bg-light\">\n  <div class=\"row\">\n    <div class=\"col-md-9 pull-left text-left\">\n      <h4 class=\"list-group-item-heading m-1\">{{ alumno.nombre }} {{ alumno.paterno }} {{ alumno.materno }}</h4>\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <p class=\"font-weight-bold text-uppercase m-1\">Matricula: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">CURP: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nivel: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grado: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grupo: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nacimiento: </p>\n        </div>\n        <div class=\"col-md-8\">\n          <p class=\"list-group-item-text m-1\">{{ alumno.matricula }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.curp }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.nivel }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.grado }}°</p>\n          <p class=\"list-group-item-text m-1\">\"{{ alumno.grupo }}\"</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.fechaNacimiento }}</p>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3 pull-right\">\n      <br>\n      <button type=\"button\" (click)=\"verAlumno(alumno.matricula)\" class=\"btn btn-outline-info btn-md btn-block\">Ver</button>\n      <br><br>\n      <button type=\"button\" (click)=\"eliminarAlumno(alumno.matricula)\" class=\"btn btn-outline-danger btn-md btn-block\">Eliminar</button>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"position-relative overflow-hidden p-3 m-md-1 bg-light\">\n  <form>\n    <h2>Buscar Alumnos</h2><br>\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-4 p-2 col-form-label\">Por matricula</label>\n      <div class=\"col-sm-8 pull-left text-left\">\n        <input type=\"text\" class=\"form-control\" name=\"matricula\" [(ngModel)]=\"matricula\" placeholder=\"Matricula . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <hr class=\"featurette-divider\">\n\n    <div class=\"form-group row\">\n      <label class=\"col-sm-4 p-2 col-form-label\">Por nombre(s)</label>\n      <div class=\"col-sm-8\">\n        <input type=\"text\" class=\"form-control\" name=\"nombre\" [(ngModel)]=\"nombre\" placeholder=\"Nombre(s) . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <hr class=\"featurette-divider\">\n\n    <label class=\"col-sm-4 p-2 col-form-label\">Por grupo</label>\n    <div class=\"form-group row\">\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" name=\"nivel\" [(ngModel)]=\"nivel\" placeholder=\"Nivel . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n      <div class=\"col-sm-4\">\n        <input type=\"number\" class=\"form-control\" name=\"grado\" [(ngModel)]=\"grado\" placeholder=\"Grado . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n      <div class=\"col-sm-4\">\n        <input type=\"text\" class=\"form-control\" name=\"grupo\" [(ngModel)]=\"grupo\" placeholder=\"Grupo . .\" [ngModelOptions]=\"{standalone: true}\">\n      </div>\n    </div>\n\n    <div class=\"form-group row\">\n      <div class=\"col-sm-12\" *ngIf=\"matricula && !nombre && !nivel && !grado && !grupo\">\n        <button type=\"submit\" (click)=\"buscarAlumnoMatricula()\" class=\"btn btn-primary btn-md btn-block\">Buscar</button>\n      </div>\n      <div class=\"col-sm-12\" *ngIf=\"!matricula && nombre && !nivel && !grado && !grupo\">\n        <button type=\"submit\" (click)=\"buscarAlumnosNombre()\" class=\"btn btn-primary btn-md btn-block\">Buscar</button>\n      </div>\n      <div class=\"col-sm-12\" *ngIf=\"!matricula && !nombre && nivel && grado && grupo\">\n        <button type=\"submit\" (click)=\"buscarAlumnosGrupo()\" class=\"btn btn-primary btn-md btn-block\">Buscar</button>\n      </div>\n    </div>\n  </form>\n</div>\n\n<hr *ngIf=\"alumnos\" class=\"featurette-divider\">\n<div *ngFor=\"let alumno of alumnos\" class=\"overflow-hidden position-relative p-4 m-md-1 bg-light\">\n  <div class=\"row\">\n    <div class=\"col-md-9 pull-left text-left\">\n      <h4 class=\"list-group-item-heading m-1\">{{ alumno.nombre }} {{ alumno.paterno }} {{ alumno.materno }}</h4>\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <p class=\"font-weight-bold text-uppercase m-1\">Matricula: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">CURP: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nivel: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grado: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grupo: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nacimiento: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Email: </p>\n        </div>\n        <div class=\"col-md-8\">\n          <p class=\"list-group-item-text m-1\">{{ alumno.matricula }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.curp }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.nivel }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.grado }}°</p>\n          <p class=\"list-group-item-text m-1\">\"{{ alumno.grupo }}\"</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.fechaNacimiento }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.email }}</p>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3 pull-right\">\n      <br>\n      <button type=\"button\" (click)=\"verAlumno(alumno.matricula)\" class=\"btn btn-outline-info btn-md btn-block\">Ver</button>\n      <br><br>\n      <button type=\"button\" (click)=\"eliminarAlumno(alumno.matricula)\" class=\"btn btn-outline-danger btn-md btn-block\">Eliminar</button>\n    </div>\n  </div>\n</div>\n\n<hr *ngIf=\"alumno\" class=\"featurette-divider\">\n<div *ngIf=\"alumno\" class=\"overflow-hidden position-relative p-4 m-md-1 bg-light\">\n  <div class=\"row\">\n    <div class=\"col-md-9 pull-left text-left\">\n      <h4 class=\"list-group-item-heading m-1\">{{ alumno.nombre }} {{ alumno.paterno }} {{ alumno.materno }}</h4>\n      <div class=\"row\">\n        <div class=\"col-md-3\">\n          <p class=\"font-weight-bold text-uppercase m-1\">Matricula: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">CURP: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nivel: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grado: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Grupo: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Nacimiento: </p>\n          <p class=\"font-weight-bold text-uppercase m-1\">Email: </p>\n        </div>\n        <div class=\"col-md-8\">\n          <p class=\"list-group-item-text m-1\">{{ alumno.matricula }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.curp }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.nivel }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.grado }}°</p>\n          <p class=\"list-group-item-text m-1\">\"{{ alumno.grupo }}\"</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.fechaNacimiento }}</p>\n          <p class=\"list-group-item-text m-1\">{{ alumno.email }}</p>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-3 pull-right\">\n      <br>\n      <button type=\"button\" (click)=\"verAlumno(alumno.matricula)\" class=\"btn btn-outline-info btn-md btn-block\">Ver</button>\n      <br><br>\n      <button type=\"button\" (click)=\"eliminarAlumno(alumno.matricula)\" class=\"btn btn-outline-danger btn-md btn-block\">Eliminar</button>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -1217,6 +1387,7 @@ var VerAlumnoComponent = /** @class */ (function () {
                 _this.flashMessage.show(data.msg, { cssClass: 'alert-danger', timeout: 3000 });
             }
             _this.ngOnInit();
+            _this.comentarioEdit = null;
         });
         this.editComentario = false;
     };
@@ -1466,7 +1637,7 @@ module.exports = ".buttonsMargins {\n  margin: 0px 10px;\n}\n/*# sourceMappingUR
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <div class=\"col-md-12 p-lg-5 mx-auto my-6\">\n    <h1 class=\"display-4 font-weight-normal\">Colegio EXAMPLE administración</h1>\n    <p class=\"lead font-weight-normal\">Aplicación web que lleva el control de calificaciones tareas con roles de profesores, alumnos y un admin</p>\n    <div *ngIf=\"!this.authService.loggedIn()\">\n      <a class=\"btn btn-outline-primary buttonsMargins\" [routerLink]=\"['/login']\">Ingresar</a>\n    </div>\n  </div>\n</div>\n<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>First column</h3>\n      <p>Hey there we are making a try</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Second column</h3>\n      <p>Hey there we are making a try</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Third column</h3>\n      <p>Hey there we are making a try</p>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <div class=\"col-md-12 p-lg-5 mx-auto my-6\">\n    <h1 class=\"display-4 font-weight-normal\">Colegio EXAMPLE administración</h1>\n    <p class=\"lead font-weight-normal\">Aplicación web que lleva el control de calificaciones tareas con roles de profesores, alumnos y un admin</p>\n    <div *ngIf=\"!this.authService.loggedIn()\">\n      <a class=\"btn btn-outline-primary buttonsMargins\" [routerLink]=\"['/login']\">Ingresar</a>\n    </div>\n  </div>\n</div>\n<!-- <div class=\"position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <h3>First column</h3>\n      <p>Hey there we are making a try</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Second column</h3>\n      <p>Hey there we are making a try</p>\n    </div>\n    <div class=\"col-md-4\">\n      <h3>Third column</h3>\n      <p>Hey there we are making a try</p>\n    </div>\n  </div>\n</div> -->\n"
 
 /***/ }),
 
@@ -1663,7 +1834,7 @@ module.exports = ".navbar {\n  height: 25px;\n}\n/*# sourceMappingURL=data:appli
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <a class=\"navbar-brand\">Colegio Example</a>\n  <ul class=\"navbar-nav mr-auto p-2\">\n    <li class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/']\">Principal</a></li>\n    <li *ngIf=\"authService.alumnoLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/verAlumno']\">Calificaciones</a></li>\n    <li *ngIf=\"authService.profesorLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/clases']\">Clases</a></li>\n    <li ngbDropdown *ngIf=\"authService.adminLoggedIn()\" class=\"nav-item dropdown show\">\n      <a ngbDropdownToggle class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" style=\"cursor: pointer;\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"true\">Administración</a>\n      <div ngbDropdownMenu class=\"dropdown-menu show\" x-placement=\"bottom-start\" style=\"position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);\">\n        <a class=\"dropdown-item\"><a class=\"nav-link dropdown-item\" [routerLink]=\"['/alumnos']\" style=\"color: black;\">Alumnos</a></a>\n        <a class=\"dropdown-item\"><a class=\"nav-link dropdown-item\" [routerLink]=\"['/profesores']\" style=\"color: black;\">Profesores</a></a>\n        <a class=\"dropdown-item\"><a class=\"nav-link dropdown-item\" [routerLink]=\"['/admins']\" style=\"color: black;\">Administradores</a></a>\n      </div>\n    </li>\n  </ul>\n  <ul class=\"navbar-nav \">\n    <!-- <li *ngIf=\"authService.adminLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Dashboard</a></li> -->\n    <li *ngIf=\"authService.loggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/profile']\">Perfil</a></li>\n    <li *ngIf=\"!authService.loggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/login']\">Ingresar</a></li>\n    <li *ngIf=\"authService.loggedIn()\" class=\"nav-item\"><a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">Salir</a></li>\n  </ul>\n</nav>"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\n  <a class=\"navbar-brand\">Colegio Example</a>\n  <ul class=\"navbar-nav mr-auto p-2\">\n    <li class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/']\">Principal</a></li>\n    <li *ngIf=\"authService.alumnoLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/verAlumno']\">Calificaciones</a></li>\n    <li *ngIf=\"authService.profesorLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/clases']\">Clases</a></li>\n    <li ngbDropdown *ngIf=\"authService.adminLoggedIn()\" class=\"nav-item dropdown show\">\n      <a ngbDropdownToggle class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" style=\"cursor: pointer;\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"true\">Administración</a>\n      <div ngbDropdownMenu class=\"dropdown-menu show\" x-placement=\"bottom-start\" style=\"position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);\">\n        <a class=\"dropdown-item\"><a class=\"nav-link dropdown-item\" [routerLink]=\"['/alumnos']\" style=\"color: black;\">Alumnos</a></a>\n        <a class=\"dropdown-item\"><a class=\"nav-link dropdown-item\" [routerLink]=\"['/profesores']\" style=\"color: black;\">Profesores</a></a>\n        <a class=\"dropdown-item\"><a class=\"nav-link dropdown-item\" [routerLink]=\"['/admins']\" style=\"color: black;\">Administradores</a></a>\n      </div>\n    </li>\n    <li *ngIf=\"authService.adminLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/comentarios']\">Comentarios</a></li>\n  </ul>\n  <ul class=\"navbar-nav \">\n    <!-- <li *ngIf=\"authService.adminLoggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/dashboard']\">Dashboard</a></li> -->\n    <li *ngIf=\"authService.loggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/profile']\">Perfil</a></li>\n    <li *ngIf=\"!authService.loggedIn()\" class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{exact:true}\"><a class=\"nav-link\" [routerLink]=\"['/login']\">Ingresar</a></li>\n    <li *ngIf=\"authService.loggedIn()\" class=\"nav-item\"><a class=\"nav-link\" (click)=\"onLogoutClick()\" href=\"#\">Salir</a></li>\n  </ul>\n</nav>"
 
 /***/ }),
 
@@ -3064,6 +3235,24 @@ var AuthService = /** @class */ (function () {
         return this.http.get('http://localhost:3000/admin/profile', { headers: headers })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
     };
+    AuthService.prototype.agregarAdminComentario = function (comentario) {
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('http://localhost:3000/admin/addComentario', comentario, { headers: headers })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    AuthService.prototype.editarAdminComentario = function (comentario) {
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('http://localhost:3000/admin/editComentario', comentario, { headers: headers })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
+    AuthService.prototype.eliminarAdminComentario = function (comentario) {
+        var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
+        headers.append('Content-Type', 'application/json');
+        return this.http.post('http://localhost:3000/admin/deleteComentario', comentario, { headers: headers })
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (res) { return res.json(); }));
+    };
     AuthService.prototype.getAdmins = function () {
         var headers = new _angular_http__WEBPACK_IMPORTED_MODULE_1__["Headers"]();
         headers.append('Content-Type', 'application/json');
@@ -3224,7 +3413,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/andoni/Documents/Angular/ColegioMEAN_V1/angular-src/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/andoni/Documents/BasesDatosAvanzadas/TC3041-PF-Primavera-2019-equipo-5/frontend/src/main.ts */"./src/main.ts");
 
 
 /***/ })

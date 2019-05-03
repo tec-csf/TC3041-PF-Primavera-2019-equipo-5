@@ -5796,8 +5796,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/andoni/Documents/Angular/ColegioMEAN_V1/angular-src/src/polyfills.ts */"./src/polyfills.ts");
-module.exports = __webpack_require__(/*! /home/andoni/Documents/Angular/ColegioMEAN_V1/angular-src/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
+__webpack_require__(/*! /home/andoni/Documents/BasesDatosAvanzadas/TC3041-PF-Primavera-2019-equipo-5/frontend/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /home/andoni/Documents/BasesDatosAvanzadas/TC3041-PF-Primavera-2019-equipo-5/frontend/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
 
 
 /***/ })
