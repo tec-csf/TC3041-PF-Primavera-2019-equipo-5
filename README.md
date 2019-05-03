@@ -109,6 +109,31 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 *[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación del repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
 
+### Para ejecutarlo local
+
+1. Clonar el repositorio de GitHub
+`git clone https://github.com/tec-csf/TC3041-PF-Primavera-2019-equipo-5.git`
+
+2. Cambiarse a la carpeta del proyecto
+`cd TC3041-PF-Primavera-2019-equipo-5`
+
+3. Cambiarse a la carpeta del backend
+`cd backend`
+
+4. Iniciar el backend de la aplicación, asumiendo que ya tiene NodeJs y todas las dependendias instaladas. En caso contrario, instalar primero NodeJs y sus dependiencias.
+`npm start`
+
+5. Abrir una nueca terminal y cambiarse a la carpeta del frontend del proyecto
+`cd TC3041-PF-Primavera-2019-equipo-5/frontend`
+
+6. Iniciar el frontend de la aplicación, asumiendo que ya tiene AngularCli y todas las dependendias instaladas. En caso contrario, instalar primero AngularCli y sus dependiencias.
+`ng serve`
+
+7. Abrir el navegador en el puerto 4200 para ver la aplicación funcionando
+`http://localhost:4200`
+
+**Nota: ya que la aplicación está usando redis-labs, puede ser que esté bloqueado el puerto de conexión. Si la aplicación no le permite hacer login es el caso, y es necesario conectarse a una red diferente.
+
 ### Para ejecutarlo local con Minikube
 
 1. Clonar el repositorio de GitHub
@@ -148,6 +173,62 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 9. Acceder a la aplicación en un browser
 
 `http://<IP-Minikube>:<Puerto-Servicio>`
+
+### Para ejecutarlo en la nube (Google Cloud)
+
+1. Entra a la consola de Google Cloud Platform (GCP)
+`https://console.cloud.google.com`
+
+2.Dentro de la plataforma entra a Compute/Kubernetes Engine y crea un nuevo cluster
+
+3. Una vez creado el cluster correctamente accede a el por medio de "Cloud Shell". Da click en "conectar"
+
+4. Una vez conectado al cluster clonar el repositorio de Gitub
+`git clone https://github.com/tec-csf/TC3041-PF-Primavera-2019-equipo-5.git`
+
+5. Cambiarse a la carpeta del proyeto
+`cd TC3041-PF-Primavera-2019-equipo-5`
+
+6. En la terminal de tu equipo clonar el repositorio de Github
+`git clone https://github.com/tec-csf/TC3041-PF-Primavera-2019-equipo-5.git`
+
+7. Cambiarse a la carpeta del frontend del proyecto
+`cd TC3041-PF-Primavera-2019-equipo-5/frontend`
+
+8. Crear la imagen del forntend usando el comando
+`docker build -t gcr.io/[id del proyecto de GCP]/frontend-image`
+
+9. Dar push a la imagen del frontend usando el comando 
+`docker push gcr.io/[id del proyecto de GCP]/frontend-image`
+
+10. Cambiarse a la carpeta del backend del proyecto
+`cd TC3041-PF-Primavera-2019-equipo-5/backend`
+
+11. Crear la imagen del forntend usando el comando
+`docker build -t gcr.io/[id del proyecto de GCP]/backend-image`
+
+12. Dar push a la imagen del frontend usando el comando 
+`docker push gcr.io/[id del proyecto de GCP]/backend-image`
+
+13. Dentro de la consola de GCP modifica el archivo "equipo5.yaml" y cambia el nombre de la imagen del frontend en la línea "37" y el nombre de la imagen del backend en la línea "42"
+`imagen del frontend: gcr.io/[id del proyecto de GCP]/frontend-image
+ imagen del backend: gcr.io/[id del proyecto de GCP]/backend-image`
+ 
+ 14. Desplegar la aplicación en el cluster
+ `kubectl apply -f equipo5.yaml`
+ 
+ 15. Comprobar que el pod está funcionando correctamente (el Status debe ser Running)
+ `kubectl get pods`
+ 
+ 16. Obtener la dirección ip externa y el puerto
+ `kubectl get service`
+ 
+ 17. Exponer la apliación a internet
+ `kubectl expose deployment frontend-app --type=LoadBalancer --port 80 --target-port [puerto asignado]`
+ 
+ 18. Acceder a la aplicación en un browser
+ `http://[ip externa]`
+ 
 
 
 ## 4. Referencias
