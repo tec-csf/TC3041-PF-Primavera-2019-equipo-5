@@ -25,6 +25,8 @@
 
 - Minikube 1.0.0
 
+-Google SDK de cloud
+
 ### 1.2 Estructura del repositorio
 
 ```
@@ -43,7 +45,7 @@
 
 Como parte de la entrega final del proyecto, se debe incluir la siguiente información:
 
-* Nosotros utilizamos dos diferentes bases de datos MongoDB y Redis estas implementadas en sus servicios de nube que tienen clusters para almacenar la información necesaria RedisLabs y Mongo Atlas respectivamente así mismo nustra solución nos demanda una base de datos orientada a documentos ya que tiene muchos datos que se van adicionando a los diferentes tipos de usuarios dependiendo de su rol asignado lo cual necesita este tipo de base de datos.
+* Descripción del proyecto.
 
 * Descripción del o los *datasets* y las fuentes de información utilizadas.
 
@@ -55,7 +57,13 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-*EL proyecto consiste en una administración de colegios, en la que se dan de alta profesores y alumnos. 
+EL proyecto consiste en una administración de colegios, en la que se dan de alta profesores y alumnos. 
+
+Existen tres roles diferentes dentro del sistema:
+
+  1. Profesor
+  2. Alumno
+  3. Administrador
 
 Cada profesor tiene asignadas materias por grado y grupo, y cada alumno tiene asignadas diferentes materias. 
 
@@ -63,7 +71,7 @@ El profesor puede asignarle a cada alumno la calificación correspondiente a cad
 
 El alumno puede consultar sus calificaciones y los comentarios recibidos por parte de los profesores.
 
-El administrador puede agregar nuevos profesores, alumnos y clases. Puede aceptar, rechazar o modificar los comentarios creados por los profesores. Crear un nuevo perfil de administrador o eliminar su perfil de administrador.*
+El administrador puede agregar nuevos profesores, alumnos y clases. Puede aceptar, rechazar o modificar los comentarios creados por los profesores. Crear un nuevo perfil de administrador o eliminar su perfil de administrador.
 
 ## 3. Solución
 
@@ -71,7 +79,11 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 3.1 Modelos de *bases de datos* utilizados
 
-*[Incluya aquí una explicación del análisis realizado y la justificación de los modelos de *bases de datos* seleccionados. Incluya todo lo que considere necesario para que una persona sin conocimientos técnicos pueda entender de que trata su solución.]*
+Utilizamos dos modelos diferentes de bases de datos, base de datos orientadas a documentos (MongoDB) y base de datos llave-valor (Redis). Ambas bases de datos fueron implementadas en sus servicios de nube que tienen clusters para almacenar la información necesaria RedisLabs y Mongo Atlas respectivamente.
+
+Nuestro sistema nos demanda una base de datos orientada a documentos ya que tiene muchos datos que se van adicionando a los diferentes tipos de usuarios dependiendo de su rol asignado, al usar este tipo de base de datos es más sencillo de adicionar nuevos módulos conforme se vaya necesitando.
+
+Usamos base de datos llave-valor para poder hacer un mejor manejo de los usuarios y las sesiones.
 
 ### 3.2 Arquitectura de la solución
 
@@ -93,27 +105,8 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 #### 3.4.2 Framework
 #### 3.4.3 Librerías de funciones o dependencias
 
-### 3.5 API
 
-*[Incluya aquí una explicación de la solución utilizada para implementar la API del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
-
-#### 3.5.1 Lenguaje de programación
-#### 3.5.2 Framework
-#### 3.5.3 Librerías de funciones o dependencias
-
-*[Incluya aquí una explicación de cada uno de los endpoints que forman parte de la API. Cada endpoint debe estar correctamente documentado.]*
-
-*[Por cada endpoint debe incluir lo siguiente:]*
-
-* **Descripción**:
-* **URL**:
-* **Verbos HTTP**:
-* **Headers**:
-* **Formato JSON del cuerpo de la solicitud**:
-* **Formato JSON de la respuesta**:
-
-
-## 3.6 Pasos a seguir para utilizar el proyecto
+## 3.5 Pasos a seguir para utilizar el proyecto
 
 
 ### Para ejecutarlo local
@@ -267,11 +260,13 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
  Teniendo la apliación corriendo (con cualquiera de los métodos previamente explicados), hacer login.
  
  **Como administrador:**
+ 
     `matricula: alejandra` 
     
     `contraseña: 12345`
     
  **Como profesor:**
+ 
    `matricula: P01`
    
    `contraseña: 12345`
@@ -279,7 +274,8 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
    (Como administrador puedes agregar un nuevo profesor e ingresar después con esas credenciales)
    
    **Como alumno:**
-   `matricula: K209`
+   
+   `matricula: K208`
    
    `contraseña: 12345`
    
