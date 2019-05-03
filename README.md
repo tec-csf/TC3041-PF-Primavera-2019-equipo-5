@@ -180,7 +180,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 `https://console.cloud.google.com`
 
-2.Dentro de la plataforma entra a Compute/Kubernetes Engine y crea un nuevo cluster
+2. Dentro de la plataforma entra a Compute/Kubernetes Engine y crea un nuevo cluster
 
 3. Una vez creado el cluster correctamente accede a el por medio de "Cloud Shell". Da click en "conectar"
 
@@ -248,7 +248,9 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
  `http://[ip externa]`
  
 
-
 ## 4. Referencias
 
-*[Incluya aquí las referencias a sitios de interés, datasets y cualquier otra información que haya utilizado para realizar el proyecto y que le puedan ser de utilidad a otras personas que quieran usarlo como referencia]*
+1. [Crear un contenedor de docker con Angular](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
+2. [Crear un contenedor de docker con Node.js](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+3. [Implementar una aplicación web en contenedor](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app)
+4. [Pushing and pulling images](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
