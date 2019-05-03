@@ -41,6 +41,4 @@ spec:
       - name: backend
         image: backend-image
         imagePullPolicy: IfNotPresent
-        ports:
-        - containerPort: 3000
         
