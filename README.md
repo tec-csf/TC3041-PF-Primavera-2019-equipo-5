@@ -1,6 +1,6 @@
 # TC3041 Proyecto  Final Primavera 2019
 
-#*[Poner aquí el Título del Proyecto]*
+#*ADMINISTRACIÓN DE COLEGIOS*
 ---
 
 ##### Integrantes:
@@ -55,7 +55,15 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-*[Incluya aquí la descripción del proyecto seleccionado.]*
+*EL proyecto consiste en una administración de colegios, en la que se dan de alta profesores y alumnos. 
+
+Cada profesor tiene asignadas materias por grado y grupo, y cada alumno tiene asignadas diferentes materias. 
+
+El profesor puede asignarle a cada alumno la calificación correspondiente a cada trimestre de la materia, así como comentarios relevantes respecto a las clase.
+
+El alumno puede consultar sus calificaciones y los comentarios recibidos por parte de los profesores.
+
+El administrador puede agregar nuevos profesores, alumnos y clases. Puede aceptar, rechazar o modificar los comentarios creados por los profesores. Crear un nuevo perfil de administrador o eliminar su perfil de administrador.*
 
 ## 3. Solución
 
@@ -107,32 +115,38 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ## 3.6 Pasos a seguir para utilizar el proyecto
 
-*[Incluya aquí una guía paso a paso para poder utilizar el proyecto, desde la clonación del repositorio hasta el despliegue de la solución en una plataforma en la nube.]*
 
 ### Para ejecutarlo local
 
 1. Clonar el repositorio de GitHub
+
 `git clone https://github.com/tec-csf/TC3041-PF-Primavera-2019-equipo-5.git`
 
 2. Cambiarse a la carpeta del proyecto
+
 `cd TC3041-PF-Primavera-2019-equipo-5`
 
 3. Cambiarse a la carpeta del backend
+
 `cd backend`
 
 4. Iniciar el backend de la aplicación, asumiendo que ya tiene NodeJs y todas las dependendias instaladas. En caso contrario, instalar primero NodeJs y sus dependiencias.
+
 `npm start`
 
 5. Abrir una nueca terminal y cambiarse a la carpeta del frontend del proyecto
+
 `cd TC3041-PF-Primavera-2019-equipo-5/frontend`
 
 6. Iniciar el frontend de la aplicación, asumiendo que ya tiene AngularCli y todas las dependendias instaladas. En caso contrario, instalar primero AngularCli y sus dependiencias.
+
 `ng serve`
 
 7. Abrir el navegador en el puerto 4200 para ver la aplicación funcionando
+
 `http://localhost:4200`
 
-**Nota: ya que la aplicación está usando redis-labs, puede ser que esté bloqueado el puerto de conexión. Si la aplicación no le permite hacer login es el caso, y es necesario conectarse a una red diferente.
+**Nota: ya que la aplicación está usando Redislabs, puede ser que esté bloqueado el puerto de conexión. Si la aplicación no le permite hacer login es el caso, y es necesario conectarse a una red diferente.
 
 ### Para ejecutarlo local con Minikube
 
@@ -247,10 +261,38 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
  
  `http://[ip externa]`
  
+ 
+ ### Para usar la aplicación
+ 
+ Teniendo la apliación corriendo (con cualquiera de los métodos previamente explicados), hacer login.
+ 
+ **Como administrador:**
+    `matricula: alejandra` 
+    
+    `contraseña: 12345`
+    
+ **Como profesor:**
+   `matricula: P01`
+   
+   `contraseña: 12345`
+   
+   (Como administrador puedes agregar un nuevo profesor e ingresar después con esas credenciales)
+   
+   **Como alumno:**
+   `matricula: K209`
+   
+   `contraseña: 12345`
+   
+   (Como administrador puedes agregar un nuevo alumno e ingresar después con esas credenciales)
+   
+ 
+ 
 
 ## 4. Referencias
 
-1. [Crear un contenedor de docker con Angular](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
-2. [Crear un contenedor de docker con Node.js](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
-3. [Implementar una aplicación web en contenedor](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app)
-4. [Pushing and pulling images](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
+1. [Conexión con Redislabs](https://docs.redislabs.com/latest/)
+2. [Conexión con Mongoose](https://mongoosejs.com/docs/guide.html)
+3. [Crear un contenedor de docker con Angular](https://scotch.io/tutorials/create-a-mean-app-with-angular-2-and-docker-compose)
+4. [Crear un contenedor de docker con Node.js](https://nodejs.org/en/docs/guides/nodejs-docker-webapp/)
+5. [Implementar una aplicación web en contenedor](https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app)
+6. [Pushing and pulling images](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
