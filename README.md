@@ -226,7 +226,7 @@ Usamos base de datos llave-valor para poder hacer un mejor manejo de los usuario
 
 12. Dar push a la imagen del frontend usando el comando 
 
-`docker push gcr.io/[id del proyecto de GCP]/backend-image`
+`docker push gcr.io/[id del proyecto de GCP]/frontend-image`
 
 13. Dentro de la consola de GCP modifica el archivo "equipo5.yaml" y cambia el nombre de la imagen del frontend en la línea "37" y el nombre de la imagen del backend en la línea "42"
 
