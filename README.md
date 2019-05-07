@@ -25,7 +25,7 @@
 
 - Minikube 1.0.0
 
--Google SDK de cloud
+- Google SDK de cloud
 
 ### 1.2 Estructura del repositorio
 
@@ -36,9 +36,6 @@
     - backend			# Carpeta con la solución del backend hecho con node.js (CMS)
     - dbs			# Carpeta con los modelos, catálogos y scripts necesarios para generar las bases de datos
     - backend/models			# Carpeta donde se almacenan los modelos de datos que utilizamos para este proyecto
-    <!-- - docs			# Carpeta con la documentación del proyecto
-        - stage_f               # Documentos de la entrega final
-        - manuals               # Manuales y guías -->
 ```
 
 ### 1.3 Documentación  del proyecto
@@ -57,7 +54,7 @@ Como parte de la entrega final del proyecto, se debe incluir la siguiente inform
 
 ## 2. Descripción del proyecto
 
-EL proyecto consiste en una administración de colegios, en la que se dan de alta profesores y alumnos. 
+EL proyecto consiste en una administración de colegios, en la que se dan de alta profesores y alumnos.
 
 Existen tres roles diferentes dentro del sistema:
 
@@ -65,7 +62,7 @@ Existen tres roles diferentes dentro del sistema:
   2. Alumno
   3. Administrador
 
-Cada profesor tiene asignadas materias por grado y grupo, y cada alumno tiene asignadas diferentes materias. 
+Cada profesor tiene asignadas materias por grado y grupo, y cada alumno tiene asignadas diferentes materias.
 
 El profesor puede asignarle a cada alumno la calificación correspondiente a cada trimestre de la materia, así como comentarios relevantes respecto a las clase.
 
@@ -105,9 +102,9 @@ El framework utilizado para el desarrollo del frontend fue: [Angular](https://an
 
 Para el diseño de las vistas de la aplicación se utilizó [Bootstrap](https://getbootstrap.com/) una librería multiplataforma para el diseño de sitios y aplicaciones web.
 
-Todas las dependencias se encuentran en el archivo "package.json" 
+Todas las dependencias se encuentran en el archivo "package.json"
 
-*[Rxjs](https://angular.io/guide/rx-library)
+- [Rxjs](https://angular.io/guide/rx-library)
 
 ### 3.4 Backend
 
@@ -125,31 +122,31 @@ El frameworks utilizado para el desarrollo del backend fueron: [Express](https:/
 
 Todas las dependencuas se encuentran en el archivo "package.json"
 
-*[Braces](https://www.npmjs.com/package/braces)
+- [Braces](https://www.npmjs.com/package/braces)
 
-*[Mail Service for the Sendgrid v3 Web API](https://www.npmjs.com/package/@sendgrid/mail)
+- [Mail Service for the Sendgrid v3 Web API](https://www.npmjs.com/package/@sendgrid/mail)
 
-*[Express Handlebars](https://www.npmjs.com/package/express-handlebars)
+- [Express Handlebars](https://www.npmjs.com/package/express-handlebars)
 
-*[Method Overrides](https://www.npmjs.com/package/method-override)
+- [Method Overrides](https://www.npmjs.com/package/method-override)
 
-*[Nodemon](https://www.npmjs.com/package/nodemon)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
 
-*[Bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [Bcryptjs](https://www.npmjs.com/package/bcryptjs)
 
-*[Body Parser](https://www.npmjs.com/package/body-parser)
+- [Body Parser](https://www.npmjs.com/package/body-parser)
 
-*[Cors](https://www.npmjs.com/package/cors)
+- [Cors](https://www.npmjs.com/package/cors)
 
-*[Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 
-*[Mongoose](https://www.npmjs.com/package/mongoose)
+- [Mongoose](https://www.npmjs.com/package/mongoose)
 
-*[Passport](https://www.npmjs.com/package/passport)
+- [Passport](https://www.npmjs.com/package/passport)
 
-*[Passport-jwt](http://www.passportjs.org/packages/passport-jwt/)
+- [Passport-jwt](http://www.passportjs.org/packages/passport-jwt/)
 
-*[Redis](https://redis.io/)
+- [Redis](https://redis.io/)
 
 
 ## 3.5 Pasos a seguir para utilizar el proyecto
@@ -257,7 +254,7 @@ Todas las dependencuas se encuentran en el archivo "package.json"
 
 `docker build -t gcr.io/[id del proyecto de GCP]/frontend-image`
 
-9. Dar push a la imagen del frontend usando el comando 
+9. Dar push a la imagen del frontend usando el comando
 
 `docker push gcr.io/[id del proyecto de GCP]/frontend-image`
 
@@ -270,7 +267,7 @@ Todas las dependencuas se encuentran en el archivo "package.json"
 
 `docker build -t gcr.io/[id del proyecto de GCP]/backend-image`
 
-12. Dar push a la imagen del frontend usando el comando 
+12. Dar push a la imagen del frontend usando el comando
 
 `docker push gcr.io/[id del proyecto de GCP]/frontend-image`
 
@@ -279,56 +276,56 @@ Todas las dependencuas se encuentran en el archivo "package.json"
 `imagen del frontend: gcr.io/[id del proyecto de GCP]/frontend-image`
 
 `imagen del backend: gcr.io/[id del proyecto de GCP]/backend-image`
- 
+
  14. Desplegar la aplicación en el cluster
- 
+
  `kubectl apply -f equipo5.yaml`
- 
+
  15. Comprobar que el pod está funcionando correctamente (el Status debe ser Running)
- 
+
  `kubectl get pods`
- 
+
  16. Obtener la dirección ip externa y el puerto
- 
+
  `kubectl get service`
- 
+
  17. Exponer la apliación a internet
- 
+
  `kubectl expose deployment frontend-app --type=LoadBalancer --port 80 --target-port [puerto asignado]`
- 
+
  18. Acceder a la aplicación en un browser
- 
+
  `http://[ip externa]`
- 
- 
+
+
  ### Para usar la aplicación
- 
+
  Teniendo la apliación corriendo (con cualquiera de los métodos previamente explicados), hacer login.
- 
+
  **Como administrador:**
- 
-    `matricula: alejandra` 
-    
+
+    `matricula: alejandra`
+
     `contraseña: 12345`
-    
+
  **Como profesor:**
- 
+
    `matricula: P01`
-   
+
    `contraseña: 12345`
-   
+
    (Como administrador puedes agregar un nuevo profesor e ingresar después con esas credenciales)
-   
+
    **Como alumno:**
-   
+
    `matricula: K208`
-   
+
    `contraseña: 12345`
-   
+
    (Como administrador puedes agregar un nuevo alumno e ingresar después con esas credenciales)
-   
- 
- 
+
+
+
 
 ## 4. Referencias
 
