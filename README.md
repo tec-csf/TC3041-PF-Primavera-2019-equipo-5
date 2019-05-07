@@ -87,7 +87,7 @@ Usamos base de datos llave-valor para poder hacer un mejor manejo de los usuario
 
 ### 3.2 Arquitectura de la solución
 
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
+
 
 ### 3.3 Frontend
 
