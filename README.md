@@ -94,16 +94,62 @@ Usamos base de datos llave-valor para poder hacer un mejor manejo de los usuario
 *[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.3.1 Lenguaje de programación
+
+Los lenguajes de programación utilizados para el desarrollo del frontend fueron: HTML y TypeScript.
+
 #### 3.3.2 Framework
+
+El framework utilizado para el desarrollo del frontend fue: [Angular](https://angular.io/). Es un framework de código abierto, para el desarrollo de aplicaciones web de una sola página.
+
 #### 3.3.3 Librerías de funciones o dependencias
+
+Para el diseño de las vistas de la aplicación se utilizó [Bootstrap](https://getbootstrap.com/) una librería multiplataforma para el diseño de sitios y aplicaciones web.
+
+Todas las dependencias se encuentran en el archivo "package.json" 
+
+*[Rxjs](https://angular.io/guide/rx-library)
 
 ### 3.4 Backend
 
 *[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
 
 #### 3.4.1 Lenguaje de programación
+
+El lenguaje de programación utilizado para el desarrollo del backend fue: [JavaScript](https://www.javascript.com/).
+
 #### 3.4.2 Framework
+
+El frameworks utilizado para el desarrollo del backend fueron: [Express](https://expressjs.com/es/) y  [NodeJs](https://nodejs.org/es/). NodeJs es un entrono de código abierto para la capa del servidor, mientras que Express es una infraestructura de aplicaciones web de NodeJs.
+
 #### 3.4.3 Librerías de funciones o dependencias
+
+Todas las dependencuas se encuentran en el archivo "package.json"
+
+*[Braces](https://www.npmjs.com/package/braces)
+
+*[Mail Service for the Sendgrid v3 Web API](https://www.npmjs.com/package/@sendgrid/mail)
+
+*[Express Handlebars](https://www.npmjs.com/package/express-handlebars)
+
+*[Method Overrides](https://www.npmjs.com/package/method-override)
+
+*[Nodemon](https://www.npmjs.com/package/nodemon)
+
+*[Bcryptjs](https://www.npmjs.com/package/bcryptjs)
+
+*[Body Parser](https://www.npmjs.com/package/body-parser)
+
+*[Cors](https://www.npmjs.com/package/cors)
+
+*[Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+
+*[Mongoose](https://www.npmjs.com/package/mongoose)
+
+*[Passport](https://www.npmjs.com/package/passport)
+
+*[Passport-jwt](http://www.passportjs.org/packages/passport-jwt/)
+
+*[Redis](https://redis.io/)
 
 
 ## 3.5 Pasos a seguir para utilizar el proyecto
