@@ -87,7 +87,7 @@ Usamos base de datos llave-valor para poder hacer un mejor manejo de los usuario
 
 ### 3.2 Arquitectura de la solución
 
-
+   ![alt text](https://github.com/tec-csf/TC3041-PF-Primavera-2019-equipo-5/blob/master/arquitectura.png)
 
 ### 3.3 Frontend
 
