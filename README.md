@@ -88,7 +88,7 @@ Usamos base de datos llave-valor para poder hacer un mejor manejo de los usuario
 
 ### 3.3 Frontend
 
-*[Incluya aquí una explicación de la solución utilizada para el frontend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+Para el frontend usamos Angular lo cual nos ayuda mucho para poder procesar la información que se ingresa y se muestra. Al final se opto por este framework ya que es de los más comunes entre la comunidad de desarrolladores, así mismo tienes la posibilidad de convertirlo en una app hibrida usando Ionic con unas modificaciones menores, así creando una interfaz completa para cumplir los objetivos de la solución del proyecto.
 
 #### 3.3.1 Lenguaje de programación
 
@@ -100,15 +100,13 @@ El framework utilizado para el desarrollo del frontend fue: [Angular](https://an
 
 #### 3.3.3 Librerías de funciones o dependencias
 
-Para el diseño de las vistas de la aplicación se utilizó [Bootstrap](https://getbootstrap.com/) una librería multiplataforma para el diseño de sitios y aplicaciones web.
+Para el diseño de las pantallas botones y assets de la aplicación se utilizó [Bootstrap](https://getbootstrap.com/) con sus modificaciones necesarias para una mejor visualización y UI.
 
-Todas las dependencias se encuentran en el archivo "package.json"
-
-- [Rxjs](https://angular.io/guide/rx-library)
+Una de las librerias mas importantes es RXJS ya que es un dependencia que te permite hacer peticiones http y procesarlas para que puedas ocupar la información que necesites de las bases de datos que procesa el backend.
 
 ### 3.4 Backend
 
-*[Incluya aquí una explicación de la solución utilizada para el backend del proyecto. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+Para el backend nosotros utilizamos node.js que es un entorno de ejecución de javascript, de codigo abierto que nos permite instalar dependencias con npm y así utilizamos las dependencias necesarias para crear la conexión del backend con el frontend ademas de crear las peticiones a las dos bases de datos.
 
 #### 3.4.1 Lenguaje de programación
 
